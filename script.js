@@ -3,9 +3,11 @@ let currentIndex = -1;
 let currentStep = 0; // 0: 題目, 1: 提示, 2: 答案
 
 async function loadData() {
+    console.log('start loading...');
     try {
-        const response = await fetch('riddles.json');
+        const response = await fetch('./riddles.json');
         riddles = await response.json();
+        console.log('finish loading');
         handleRouting();
     } catch (e) {
         document.getElementById('question').innerText = "無法載入謎題資料";
@@ -16,6 +18,7 @@ function handleRouting() {
     const hash = window.location.hash;
     const params = new URLSearchParams(hash.replace('#', ''));
     const targetId = params.get('id');
+    consolg.log('targetId: ', targetId);
     
     currentIndex = riddles.findIndex(r => r.id === targetId);
     
