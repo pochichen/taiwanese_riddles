@@ -9,9 +9,11 @@
 }
 
 #hint-display {
-    min-height: 1.6em; /* 預留提示的高度 */
+    min-height: 1.6em;
     margin-top: 15px;
-    transition: opacity 0.3s ease;
+    font-size: 1.2rem; /* 稍微縮小提示字體 */
+    color: #555;
+    line-height: 1.8; /* 讓多行提示之間有呼吸感 */
 }
 
 #answer-display {

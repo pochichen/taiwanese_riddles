@@ -1,6 +1,7 @@
 let riddles = []; // 確保它是全域變數
 let currentIndex = -1;
 let currentStep = 0;
+let currentHintIndex = 0; // 新增：用來追蹤目前顯示到第幾個提示
 
 async function loadData() {
     console.log("1. 開始執行 loadData...");
@@ -56,41 +57,72 @@ function handleRouting() {
 }
 
 function displayRiddle(item) {
-    console.log("5. 正在顯示題目 ID:", item.id);
+    console.log("正在顯示題目 ID:", item.id);
     document.getElementById('question').innerText = item.question;
     
-    const hintText = (item.hint && item.hint.length > 0) ? `提示：${item.hint.join('、')}` : "此題無提示";
-    document.getElementById('hint-display').innerText = hintText;
-    document.getElementById('answer-display').innerText = `答案：${item.answer}`;
+    // 清空並初始化提示區域
+    const hintDisplay = document.getElementById('hint-display');
+    hintDisplay.innerHTML = ""; 
+    hintDisplay.classList.add('hidden');
     
-    document.getElementById('hint-display').classList.add('hidden');
+    document.getElementById('answer-display').innerText = `答案：${item.answer}`;
     document.getElementById('answer-display').classList.add('hidden');
     
-    // 更新按鈕狀態
+    // 重設狀態
+    currentStep = 0; 
+    currentHintIndex = 0; 
+
+    // 更新導覽按鈕
     document.getElementById('btn-prev').disabled = (currentIndex === 0);
     document.getElementById('btn-next').disabled = (currentIndex === riddles.length - 1);
 }
 
-// 事件監聽
-window.onhashchange = handleRouting;
+function handleAdvanceStep() {
+    const item = riddles[currentIndex];
+    const hintDisplay = document.getElementById('hint-display');
+    const answerDisplay = document.getElementById('answer-display');
 
-// 鍵盤空白鍵邏輯
+    // 狀態 0 或 1：處理提示顯示
+    if (currentStep === 0 || currentStep === 1) {
+        if (item.hint && currentHintIndex < item.hint.length) {
+            // 如果還有提示沒顯示
+            const newHint = document.createElement('div');
+            newHint.innerText = `提示 ${currentHintIndex + 1}：${item.hint[currentHintIndex]}`;
+            hintDisplay.appendChild(newHint);
+            hintDisplay.classList.remove('hidden');
+            
+            currentHintIndex++;
+            currentStep = 1; // 進入提示模式
+        } else {
+            // 沒有提示或提示已顯示完畢 -> 顯示答案
+            if (item.hint.length === 0 && currentStep === 0) {
+                hintDisplay.innerText = "此題無提示";
+                hintDisplay.classList.remove('hidden');
+                currentStep = 1; // 先讓使用者看「無提示」，下次按才出答案
+            } else {
+                answerDisplay.classList.remove('hidden');
+                currentStep = 2; // 進入答案模式
+            }
+        }
+    } 
+    // 狀態 2：跳下一題
+    else if (currentStep === 2) {
+        if (currentIndex < riddles.length - 1) {
+            window.location.hash = `id=${riddles[currentIndex + 1].id}`;
+        }
+    }
+}
+
+// 修改鍵盤監聽
 document.addEventListener('keydown', (e) => {
     if (e.code === 'Space') {
         e.preventDefault();
-        if (currentStep === 0) {
-            document.getElementById('hint-display').classList.remove('hidden');
-            currentStep = 1;
-        } else if (currentStep === 1) {
-            document.getElementById('answer-display').classList.remove('hidden');
-            currentStep = 2;
-        } else if (currentStep === 2) {
-            if (currentIndex < riddles.length - 1) {
-                window.location.hash = `id=${riddles[currentIndex + 1].id}`;
-            }
-        }
+        handleAdvanceStep();
     }
 });
+
+// 事件監聽
+window.onhashchange = handleRouting;
 
 // 按鈕邏輯
 document.getElementById('btn-prev').onclick = () => {
@@ -99,8 +131,12 @@ document.getElementById('btn-prev').onclick = () => {
 document.getElementById('btn-next').onclick = () => {
     if (currentIndex < riddles.length - 1) window.location.hash = `id=${riddles[currentIndex + 1].id}`;
 };
-document.getElementById('btn-hint').onclick = () => document.getElementById('hint-display').classList.toggle('hidden');
-document.getElementById('btn-answer').onclick = () => document.getElementById('answer-display').classList.toggle('hidden');
-
+// 修改提示與答案按鈕（讓它們也遵循這個流程）
+document.getElementById('btn-hint').onclick = handleAdvanceStep;
+document.getElementById('btn-answer').onclick = () => {
+    // 點擊「看答案」按鈕直接強制跳到顯示答案
+    document.getElementById('answer-display').classList.remove('hidden');
+    currentStep = 2;
+};
 // 啟動！
 loadData();
