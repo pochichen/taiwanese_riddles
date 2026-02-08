@@ -1,0 +1,29 @@
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative; /* 讓內部絕對定位元素以此為基準 */
+}
+
+#hint-display {
+    min-height: 1.6em; /* 預留提示的高度 */
+    margin-top: 15px;
+    transition: opacity 0.3s ease;
+}
+
+#answer-display {
+    position: absolute;
+    bottom: 15%; /* 固定在螢幕下方 */
+    font-weight: bold;
+    color: #e74c3c;
+    transition: transform 0.3s ease;
+}
+
+/* 改用 opacity 控制顯示，可以讓出現過程更平滑 */
+.hidden {
+    opacity: 0;
+    pointer-events: none; /* 隱藏時不可點擊 */
+}
