@@ -16,19 +16,26 @@ async function loadData() {
 
 function handleRouting() {
     const hash = window.location.hash;
-    const params = new URLSearchParams(hash.replace('#', ''));
-    const targetId = params.get('id');
-    consolg.log('targetId: ', targetId);
-    
-    currentIndex = riddles.findIndex(r => r.id === targetId);
-    
+    console.log("當前 Hash:", hash); // 偵錯用
+
+    // 取得 ID
+    let targetId = null;
+    if (hash.includes('id=')) {
+        targetId = hash.split('id=')[1];
+    }
+    console.log('targetId: ', targetId);
+
+    // 在 riddles 陣列中尋找
+    currentIndex = riddles.findIndex(r => String(r.id) === String(targetId));
+
+    // 如果找不到 (例如剛進入網頁 hash 為空)，預設顯示第一題
     if (currentIndex === -1) {
+        console.log("找不到 ID 或 Hash 為空，導向第一題");
         currentIndex = 0;
-        window.location.hash = `id=${riddles[0].id}`;
-        return;
+        // 如果網址完全沒 Hash，補上它
+        if (!hash) window.location.hash = `id=${riddles[0].id}`;
     }
     
-    currentStep = 0; // 換題時重設步驟
     displayRiddle(riddles[currentIndex]);
 }
 
