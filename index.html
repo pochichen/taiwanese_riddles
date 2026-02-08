@@ -1,15 +1,29 @@
-<div id="app">
-    <button id="btn-prev" class="btn top-left">⬅️ 上一題</button>
-    <button id="btn-next" class="btn top-right">下一題 ➡️</button>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>趣味猜謎</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <main class="container">
-        <h1 id="question">載入中...</h1>
-        <div id="hint-display" class="hint-text hidden"></div>
-        <div id="answer-display" class="answer-text hidden"></div>
-    </main>
+    <div id="app">
+        <button id="btn-prev" class="btn top-left">⬅️ 上一題</button>
+        <button id="btn-next" class="btn top-right">下一題 ➡️</button>
 
-    <div class="controls">
-        <button id="btn-hint" class="btn bottom-left">💡 提示</button>
-        <button id="btn-answer" class="btn bottom-right">🔓 看答案</button>
+        <main class="container">
+            <h1 id="question">載入中...</h1>
+            <div id="hint-display" class="hint-text hidden"></div>
+            <div id="answer-display" class="answer-text hidden"></div>
+        </main>
+
+        <div class="controls">
+            <button id="btn-hint" class="btn bottom-left">💡 提示</button>
+            <button id="btn-answer" class="btn bottom-right">🔓 看答案</button>
+        </div>
     </div>
-</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
