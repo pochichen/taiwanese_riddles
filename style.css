@@ -8,10 +8,15 @@
     position: relative; /* 讓內部絕對定位元素以此為基準 */
 }
 
+.btn {
+    font-size: 1.5rem;
+    padding: 12px 24px;
+}
+
 #hint-display {
     min-height: 1.6em;
     margin-top: 15px;
-    font-size: 1.2rem; /* 稍微縮小提示字體 */
+    font-size: 1.5rem; /* 增加提示字體大小 */
     color: #555;
     line-height: 1.8; /* 讓多行提示之間有呼吸感 */
 }
@@ -21,6 +26,7 @@
     bottom: 15%; /* 固定在螢幕下方 */
     font-weight: bold;
     color: #e74c3c;
+    font-size: 2rem; /* 增加答案字體大小 */
     transition: transform 0.3s ease;
 }
 
