@@ -113,6 +113,29 @@ function handleAdvanceStep() {
     }
 }
 
+// 新增：專門處理提示按鈕的邏輯 - 只顯示提示，不顯示答案
+function handleHintClick() {
+    const item = riddles[currentIndex];
+    const hintDisplay = document.getElementById('hint-display');
+
+    // 如果還有提示沒顯示
+    if (item.hint && currentHintIndex < item.hint.length) {
+        const newHint = document.createElement('div');
+        newHint.innerText = `提示 ${currentHintIndex + 1}：${item.hint[currentHintIndex]}`;
+        hintDisplay.appendChild(newHint);
+        hintDisplay.classList.remove('hidden');
+        
+        currentHintIndex++;
+        currentStep = 1; // 進入提示模式
+    } else if (currentHintIndex === 0 && item.hint && item.hint.length === 0) {
+        // 完全沒有提示的情況
+        hintDisplay.innerText = "此題無提示";
+        hintDisplay.classList.remove('hidden');
+        currentStep = 1;
+    }
+    // 如果提示已經顯示完畢，什麼都不做（不顯示答案）
+}
+
 // 修改鍵盤監聽
 document.addEventListener('keydown', (e) => {
     if (e.code === 'Space') {
@@ -131,8 +154,8 @@ document.getElementById('btn-prev').onclick = () => {
 document.getElementById('btn-next').onclick = () => {
     if (currentIndex < riddles.length - 1) window.location.hash = `id=${riddles[currentIndex + 1].id}`;
 };
-// 修改提示與答案按鈕（讓它們也遵循這個流程）
-document.getElementById('btn-hint').onclick = handleAdvanceStep;
+// 修改提示與答案按鈕
+document.getElementById('btn-hint').onclick = handleHintClick;
 document.getElementById('btn-answer').onclick = () => {
     // 點擊「看答案」按鈕直接強制跳到顯示答案
     document.getElementById('answer-display').classList.remove('hidden');
