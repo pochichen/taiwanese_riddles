@@ -1,37 +1,126 @@
-.container {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden; /* 防止頁面滾動 */
+    overscroll-behavior: none; /* 防止瀏覽器邊界滾動/回彈效果 */
+    touch-action: manipulation; /* 優化觸控，防止雙擊縮放 */
+}
+
+#app {
     height: 100vh;
+    height: 100dvh; /* 動態視窗高度，解決行動裝置工具列遮擋問題 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 20px;
+    gap: 10px; /* 確保區塊間有最小間距 */
+}
+
+/* 頂部導航按鈕 */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-shrink: 0; /* 防止被壓縮 */
+    padding: 0 16px; /* 給邊緣一點呼吸空間 */
+}
+
+.btn {
+    font-size: 1.5rem;
+    padding: 8px 24px;
+    flex-shrink: 0;
+}
+
+/* 主要內容區域 */
+.container {
+    flex: 1 1 auto; /* 可伸縮，佔據剩餘空間 */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    position: relative; /* 讓內部絕對定位元素以此為基準 */
+    position: relative;
+    min-height: 0; /* 關鍵：允許 flex 子元素縮小至小於內容尺寸 */
+    padding: 20px 0;
+    overflow: hidden; /* 內容過長時隱藏而非撐大容器 */
 }
 
-.btn {
-    font-size: 1.5rem;
-    padding: 12px 24px;
+#question {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    word-break: keep-all; /* 中文換行較美觀 */
+    overflow-wrap: break-word; /* 長單字強制換行 */
 }
 
 #hint-display {
     min-height: 1.6em;
     margin-top: 15px;
-    font-size: 1.5rem; /* 增加提示字體大小 */
+    font-size: 1.5rem;
     color: #555;
-    line-height: 1.8; /* 讓多行提示之間有呼吸感 */
+    line-height: 1.8;
+    overflow-wrap: break-word;
 }
 
 #answer-display {
     position: absolute;
-    bottom: 15%; /* 固定在螢幕下方 */
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
     font-weight: bold;
     color: #e74c3c;
-    font-size: 2rem; /* 增加答案字體大小 */
+    font-size: 2rem;
     transition: transform 0.3s ease;
+    width: 90%;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+/* 底部控制按鈕 */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 16px 0;
+    flex-shrink: 0; /* 關鍵：永不縮小，確保按鈕永遠可見 */
 }
 
 /* 改用 opacity 控制顯示，可以讓出現過程更平滑 */
 .hidden {
     opacity: 0;
     pointer-events: none; /* 隱藏時不可點擊 */
+}
+
+/* 響應式：小螢幕調整字體與間距 */
+@media (max-width: 480px) {
+    #app {
+        padding: 8px 12px;
+        gap: 8px;
+    }
+    
+    .btn {
+        font-size: 1.2rem;
+        padding: 10px 16px;
+    }
+    
+    #question {
+        font-size: 1.5rem;
+    }
+    
+    #hint-display {
+        font-size: 1.3rem;
+    }
+    
+    #answer-display {
+        font-size: 1.6rem;
+    }
+    
+    .container {
+        padding: 15px 0;
+    }
 }
