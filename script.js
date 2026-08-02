@@ -138,9 +138,35 @@ function handleHintClick() {
 
 // 修改鍵盤監聽
 document.addEventListener('keydown', (e) => {
-    if (e.code === 'Space') {
-        e.preventDefault();
-        handleAdvanceStep();
+    // 防止在輸入框中觸發（雖然目前沒有輸入框，但以防萬一）
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+
+    switch (e.code) {
+        case 'ArrowLeft':
+            e.preventDefault();
+            if (currentIndex > 0) {
+                window.location.hash = `id=${riddles[currentIndex - 1].id}`;
+            }
+            break;
+        case 'ArrowRight':
+            e.preventDefault();
+            if (currentIndex < riddles.length - 1) {
+                window.location.hash = `id=${riddles[currentIndex + 1].id}`;
+            }
+            break;
+        case 'ArrowUp':
+            e.preventDefault();
+            handleHintClick();
+            break;
+        case 'ArrowDown':
+            e.preventDefault();
+            document.getElementById('answer-display').classList.remove('hidden');
+            currentStep = 2;
+            break;
+        case 'Space':
+            e.preventDefault();
+            handleAdvanceStep();
+            break;
     }
 });
 
