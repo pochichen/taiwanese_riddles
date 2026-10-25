@@ -112,6 +112,12 @@ function displayRiddle(item) {
     console.log("正在顯示題目 ID:", item.id);
     document.getElementById('question').innerText = item.question;
     
+    // 題目台羅拼音
+    const qTlDisplay = document.getElementById('question-tl');
+    if (qTlDisplay) {
+        qTlDisplay.innerText = item.question_tl || "";
+    }
+
     // 清空並初始化提示區域
     const hintDisplay = document.getElementById('hint-display');
     hintDisplay.innerHTML = ""; 
@@ -124,6 +130,12 @@ function displayRiddle(item) {
     const answerDisplay = document.getElementById('answer-display');
     answerDisplay.innerText = `答案：${item.answer}`;
     answerDisplay.classList.add('hidden');
+
+    // 答案台羅拼音
+    const aTlDisplay = document.getElementById('answer-tl');
+    if (aTlDisplay) {
+        aTlDisplay.innerText = item.answer_tl ? `(${item.answer_tl})` : "";
+    }
 
     const expDisplay = document.getElementById('explanation-display');
     if (expDisplay) {

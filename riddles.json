@@ -6,7 +6,9 @@
             "提示"
         ],
         "answer": "答案",
-        "explanation": "遊戲說明：使用鍵盤左右鍵切換題目，空白鍵循環查看提示、答案與前往下一題。"
+        "explanation": "遊戲說明：使用鍵盤左右鍵切換題目，空白鍵循環查看提示、答案與前往下一題。",
+        "question_tl": "Tê-bo̍k tsiong ē hián-sī tī tsia, ji̍h khàng-pe̍h-kiān hi̍k-sī ē-tsi̍t-tê khai-sí tshai-bī",
+        "answer_tl": "Tah-àn"
     },
     {
         "id": "1",
@@ -15,7 +17,9 @@
             "猜一種水果"
         ],
         "answer": "鳳梨",
-        "explanation": "鳳梨外皮粗硬凸起如戰甲，削皮下刀時切開鮮甜黃色果肉。"
+        "explanation": "鳳梨外皮粗硬凸起如戰甲，削皮下刀時切開鮮甜黃色果肉。",
+        "question_tl": "Ui-hong tshīng tsiàn-kah, kìnn-tio̍h to, tiō ē kuah-bah",
+        "answer_tl": "Ông-lâi (Hōng-lê)"
     },
     {
         "id": "2",
@@ -24,7 +28,9 @@
             "猜一種水果"
         ],
         "answer": "香蕉",
-        "explanation": "形容香蕉成熟時外皮金黃（黃色布），果肉白潤（包銀條），外形彎彎微翹。"
+        "explanation": "形容香蕉成熟時外皮金黃（黃色布），果肉白潤（包銀條），外形彎彎微翹。",
+        "question_tl": "N̂g-sik pòo, pau gîn-tiâu, sin-khu uan-uan nn̄g phìnn khiàu",
+        "answer_tl": "King-tsio (Hiong-tsio)"
     },
     {
         "id": "3",
@@ -33,21 +39,27 @@
             "猜一種水果"
         ],
         "answer": "龍眼",
-        "explanation": "龍眼天然渾圓不用搓捏，果肉鮮美自帶甜味，免加糖就很甜。"
+        "explanation": "龍眼天然渾圓不用搓捏，果肉鮮美自帶甜味，免加糖就很甜。",
+        "question_tl": "Bián tsho ē înn, bô tsham thn̂g ē tīnn",
+        "answer_tl": "Lîng-gán"
     },
     {
         "id": "4",
         "question": "和尚划船",
         "hint": [],
         "answer": "無法度",
-        "explanation": "和尚沒有頭髮，過河划船無槳渡河。台語「無髮渡」諧音「無法度」，比喻毫無辦法。"
+        "explanation": "和尚沒有頭髮，過河划船無槳渡河。台語「無髮渡」諧音「無法度」，比喻毫無辦法。",
+        "question_tl": "Huê-siūnn kò-tsûn",
+        "answer_tl": "Bô-huat-tōo"
     },
     {
         "id": "5",
         "question": "十二月天睏厝頂",
         "hint": [],
         "answer": "吝嗇",
-        "explanation": "十二月寒冬睡在屋頂上會結霜（凍霜）。台語「凍霜」音同「棟霜」，形容人格外吝嗇小氣、一毛不拔。"
+        "explanation": "十二月寒冬睡在屋頂上會結霜（凍霜）。台語「凍霜」音同「棟霜」，形容人格外吝嗇小氣、一毛不拔。",
+        "question_tl": "Tsa̍p-jī-gue̍h thinn khùn tshù-tíng",
+        "answer_tl": "Tàng-sng (Līn-sik)"
     },
     {
         "id": "6",
@@ -56,7 +68,9 @@
             "猜ㄧ縣市名"
         ],
         "answer": "基隆",
-        "explanation": "九個人卻有十顆頭，多出一人頭，台語叫「加人」（ke-lâng），諧音台灣地名「基隆」（Ke-lâng）。"
+        "explanation": "九個人卻有十顆頭，多出一人頭，台語叫「加人」（ke-lâng），諧音台灣地名「基隆」（Ke-lâng）。",
+        "question_tl": "Káu ê lâng, tsa̍p lia̍p thâu-khak",
+        "answer_tl": "Ke-lâng"
     },
     {
         "id": "7",
@@ -65,7 +79,9 @@
             "猜一個字"
         ],
         "answer": "晶",
-        "explanation": "「晶」字由三個「日」組成，每個「日」有三橫兩直，三個「日」加起來正好是九橫六直！"
+        "explanation": "「晶」字由三個「日」組成，每個「日」有三橫兩直，三個「日」加起來正好是九橫六直！",
+        "question_tl": "Káu huînn la̍k ti̍t, Khóng-tsú-kong siūnn sann ji̍t",
+        "answer_tl": "Tsinn"
     },
     {
         "id": "8",
@@ -75,7 +91,9 @@
             "農用工具"
         ],
         "answer": "鋤頭",
-        "explanation": "鋤頭鐵刃前傾像嘴尖，柄彎如駝背，耕地時除草，農閒時倚靠在牆邊。"
+        "explanation": "鋤頭鐵刃前傾像嘴尖，柄彎如駝背，耕地時除草，農閒時倚靠在牆邊。",
+        "question_tl": "Tshuì tsiam puē tô, gê-khí tsē. Bâng sî tshân tsia̍h tsháu, hân sî piah tsò ue.",
+        "answer_tl": "Tî-thâu"
     },
     {
         "id": "9",
@@ -85,7 +103,9 @@
             "搬運工具"
         ],
         "answer": "扁擔",
-        "explanation": "扁擔取自山林竹木，挑擔搬運時橫置肩上，卸下貨物後平躺或立於牆邊。"
+        "explanation": "扁擔取自山林竹木，挑擔搬運時橫置肩上，卸下貨物後平躺或立於牆邊。",
+        "question_tl": "Tióng tsāi suann-siōng, lo̍k tsāi kian-siōng. Kàn-ua̍h thó-hā, hiu-sit khò tshiông.",
+        "answer_tl": "Pínn-tànn"
     },
     {
         "id": "10",
@@ -94,7 +114,9 @@
             "猜一種物品"
         ],
         "answer": "布袋",
-        "explanation": "布袋開口大能裝穀物（吃豆吃米），袋底縫合無孔腹大，形象生動。"
+        "explanation": "布袋開口大能裝穀物（吃豆吃米），袋底縫合無孔腹大，形象生動。",
+        "question_tl": "Khóo tāi bô khí, hok tāi bô tsê. Iā ē tsia̍h tāu, iā ē tsia̍h bí.",
+        "answer_tl": "Pòo-tē"
     },
     {
         "id": "11",
@@ -103,7 +125,9 @@
             "猜一種工具"
         ],
         "answer": "鉋刀",
-        "explanation": "鉋刀底部的鐵刃如鐵鼠，木柄如木尾巴，刨過木材時刨出刨花痕跡。"
+        "explanation": "鉋刀底部的鐵刃如鐵鼠，木柄如木尾巴，刨過木材時刨出刨花痕跡。",
+        "question_tl": "Thih niáu-tshí, bo̍k bué-pa. Pê tsiūnn tshiū, tshiū senn pa.",
+        "answer_tl": "Phâu-to"
     },
     {
         "id": "12",
@@ -112,7 +136,9 @@
             "猜一種工具"
         ],
         "answer": "鋸子",
-        "explanation": "鋸子佈滿鋒利的鐵齒，來回拉扯切斷木材，如同替木頭分家。"
+        "explanation": "鋸子佈滿鋒利的鐵齒，來回拉扯切斷木材，如同替木頭分家。",
+        "question_tl": "Sim ti̍t khóo khuài, muá tshuì thih gê. Ki-lí-ku-lu, thè lâng hun-ke.",
+        "answer_tl": "Kì-á"
     },
     {
         "id": "13",
@@ -121,7 +147,9 @@
             "猜一種工具"
         ],
         "answer": "斧頭",
-        "explanation": "斧頭砍柴時像跌倒的小孩往前劈，砍在木墩或楔子（豆腐乾）上。"
+        "explanation": "斧頭砍柴時像跌倒的小孩往前劈，砍在木墩或楔子（豆腐乾）上。",
+        "question_tl": "Tsi̍t ê gín-á po̍h-tó po̍h-tó, tsia̍h tsi̍t tè tāu-kuann tiō hó.",
+        "answer_tl": "Póo-thâu"
     },
     {
         "id": "14",
@@ -131,7 +159,9 @@
             "建築工班常用工具"
         ],
         "answer": "墨斗",
-        "explanation": "木匠用的墨斗外形方正，內部蓄墨（黑心），拉出墨線彈在木料上作為切割直線準則。"
+        "explanation": "木匠用的墨斗外形方正，內部蓄墨（黑心），拉出墨線彈在木料上作為切割直線準則。",
+        "question_tl": "Hîng hong-tsìng, tōo hik sim. Tsí-iàu suànn-soh lîng, tsáu--kuè hun su-iânn.",
+        "answer_tl": "Ba̍k-táu"
     },
     {
         "id": "15",
@@ -140,7 +170,9 @@
             "猜一種工具"
         ],
         "answer": "銼刀",
-        "explanation": "銼刀表面布滿密密麻麻的齒紋疙瘩，銼削打磨後金屬或木料變得光滑。"
+        "explanation": "銼刀表面布滿密密麻麻的齒紋疙瘩，銼削打磨後金屬或木料變得光滑。",
+        "question_tl": "Biat khuànn guá muá-sin kat-tah, guá tsáu kuè ê tē-hng kng-ku̍t-ku̍t.",
+        "answer_tl": "Tshò-to"
     },
     {
         "id": "16",
@@ -149,7 +181,9 @@
             "猜一種工具"
         ],
         "answer": "竹梯/工具梯/梯子",
-        "explanation": "竹梯橫樑多而立柱少，沒有樓層卻能讓人一步步登高。"
+        "explanation": "竹梯橫樑多而立柱少，沒有樓層卻能讓人一步步登高。",
+        "question_tl": "Kî-kî-khiáu-khiáu, niû tsē thiāu tsió. Siōng-bīn bô lâu, khiok ū lâng tsáu.",
+        "answer_tl": "Tik-the / The-á"
     },
     {
         "id": "17",
@@ -158,7 +192,9 @@
             "猜一種工具"
         ],
         "answer": "石磨",
-        "explanation": "上下兩塊石磨的磨芯（磨臍）緊緊相抵，旋轉倒入泡水豆米時，白濃豆漿米漿順流而出。"
+        "explanation": "上下兩塊石磨的磨芯（磨臍）緊緊相抵，旋轉倒入泡水豆米時，白濃豆漿米漿順流而出。",
+        "question_tl": "Tsê tú tsê, pe̍h-ko lâu--tshut-lâi.",
+        "answer_tl": "Tsio̍h-bō"
     },
     {
         "id": "18",
@@ -167,14 +203,18 @@
             "猜一種工具"
         ],
         "answer": "秤子",
-        "explanation": "老式桿秤木桿上刻滿秤星刻度（花落落），配上一顆沉甸甸的鐵秤錘（有确确）。"
+        "explanation": "老式桿秤木桿上刻滿秤星刻度（花落落），配上一顆沉甸甸的鐵秤錘（有确确）。",
+        "question_tl": "Tsi̍t ki tshâ-á hue-lo̍k-lo̍k, tsi̍t ê thuî-á ū-khak-khak.",
+        "answer_tl": "Tshìn-á"
     },
     {
         "id": "19",
         "question": "透早到暗走東西，一日過去閣再來。",
         "hint": [],
         "answer": "太陽",
-        "explanation": "太陽每日清晨由東方升起、傍晚在西方落下，日復一日循環不息。"
+        "explanation": "太陽每日清晨由東方升起、傍晚在西方落下，日復一日循環不息。",
+        "question_tl": "Thàu-tsá kàu àm tsáu tang-sai, tsi̍t ji̍t kuè--khì koh tsài lâi.",
+        "answer_tl": "Thài-iông (Ji̍t-thâu)"
     },
     {
         "id": "20",
@@ -183,7 +223,9 @@
             "猜日用品"
         ],
         "answer": "雨傘",
-        "explanation": "出門下雨撐開傘如一朵綻放的花，回家收攏折疊後細長如一條瓜。"
+        "explanation": "出門下雨撐開傘如一朵綻放的花，回家收攏折疊後細長如一條瓜。",
+        "question_tl": "Tshut-mn̂g tsi̍t luí hue, ji̍p-mn̂g tsi̍t tiâu kue.",
+        "answer_tl": "Hōo-suànn"
     },
     {
         "id": "21",
@@ -192,7 +234,9 @@
             "猜一種玩具"
         ],
         "answer": "陀螺",
-        "explanation": "陀螺底部只有一根鐵釘（一腳），高速旋轉時發出響亮的破空呼嘯聲（無嘴會哮）。"
+        "explanation": "陀螺底部只有一根鐵釘（一腳），高速旋轉時發出響亮的破空呼嘯聲（無嘴會哮）。",
+        "question_tl": "Tsi̍t kha ē tsáu, bô tshuì ē háu.",
+        "answer_tl": "Kê-lô (Kong-lô)"
     },
     {
         "id": "22",
@@ -201,7 +245,9 @@
             "猜器官"
         ],
         "answer": "眼睛",
-        "explanation": "眼白如白瓷瓶，黑眼珠如烏棗；白天張開看世界，夜晚閉目入睡如上鎖。"
+        "explanation": "眼白如白瓷瓶，黑眼珠如烏棗；白天張開看世界，夜晚閉目入睡如上鎖。",
+        "question_tl": "Pe̍h kan-á tsng oo-tsó, ji̍t--sî khui, àm--sî só.",
+        "answer_tl": "Ba̍k-tsiu"
     },
     {
         "id": "23",
@@ -210,7 +256,9 @@
             "猜動物"
         ],
         "answer": "魚",
-        "explanation": "魚在水中無論游動、靜止或睡眠都保持同樣姿態，沒有四肢因此坐立行眠皆如一。"
+        "explanation": "魚在水中無論游動、靜止或睡眠都保持同樣姿態，沒有四肢因此坐立行眠皆如一。",
+        "question_tl": "Tsē iā kiânn, khiā iā kiânn, kiânn iā kiânn, khùn iā kiânn.",
+        "answer_tl": "Hî (Hû)"
     },
     {
         "id": "24",
@@ -219,7 +267,9 @@
             "猜一種動物"
         ],
         "answer": "魚",
-        "explanation": "魚有鰭（翅）但不能在空中飛翔，在水中游動迅速能行千里。"
+        "explanation": "魚有鰭（翅）但不能在空中飛翔，在水中游動迅速能行千里。",
+        "question_tl": "Ū si̍t pue bē khí, bô kha tsáu tshian-lí.",
+        "answer_tl": "Hî (Hû)"
     },
     {
         "id": "25",
@@ -228,7 +278,9 @@
             "猜水果"
         ],
         "answer": "西瓜",
-        "explanation": "西瓜藤蔓如絲，紅肉如關公紅臉，白瓜子如劉備白面，青綠外皮如張飛黑青威猛。"
+        "explanation": "西瓜藤蔓如絲，紅肉如關公紅臉，白瓜子如劉備白面，青綠外皮如張飛黑青威猛。",
+        "question_tl": "Tîn si-si, âng Kuan-kong, pe̍h Lâu-pī, tshinn Tsiunn-hui.",
+        "answer_tl": "Si-kue"
     },
     {
         "id": "26",
@@ -237,7 +289,9 @@
             "猜吃飯用具"
         ],
         "answer": "筷子",
-        "explanation": "筷子一日三餐都要拿出來夾菜用餐，夜晚吃飽洗淨插在筷籠裡直立到天亮。"
+        "explanation": "筷子一日三餐都要拿出來夾菜用餐，夜晚吃飽洗淨插在筷籠裡直立到天亮。",
+        "question_tl": "Tsi̍t ji̍t tsáu sann tǹg, tsi̍t mî khiā kàu kng.",
+        "answer_tl": "Tī (Tu)"
     },
     {
         "id": "27",
@@ -246,7 +300,9 @@
             "猜地名"
         ],
         "answer": "虎尾、後龍",
-        "explanation": "十二生肖中兔子排在虎後面、龍前面，所以兔子的位置就在「虎尾」與「後龍」（皆為台灣地名）！"
+        "explanation": "十二生肖中兔子排在虎後面、龍前面，所以兔子的位置就在「虎尾」與「後龍」（皆為台灣地名）！",
+        "question_tl": "Thòo",
+        "answer_tl": "Hóo-bué, Aū-lîng"
     },
     {
         "id": "28",
@@ -255,7 +311,9 @@
             "猜文具"
         ],
         "answer": "毛筆",
-        "explanation": "毛筆尖端如鳥喙，停歇在黑色墨池中，沾墨水不多卻能寫出萬語千言。"
+        "explanation": "毛筆尖端如鳥喙，停歇在黑色墨池中，沾墨水不多卻能寫出萬語千言。",
+        "question_tl": "Tsiam-tshuì tsiáu, hioh oo khe, tsia̍h tsuí tsió, giân-gí tsē.",
+        "answer_tl": "Moo-pit"
     },
     {
         "id": "29",
@@ -264,7 +322,9 @@
             "猜器官"
         ],
         "answer": "耳",
-        "explanation": "耳朵長在頭部兩側像兩片樹葉，人轉頭怎麼看也看不到自己的耳朵。"
+        "explanation": "耳朵長在頭部兩側像兩片樹葉，人轉頭怎麼看也看不到自己的耳朵。",
+        "question_tl": "Tsi̍t tsâng tshiū-á nn̄g phìnn hio̍h, ua̍t lâi ua̍t khì khuànn bē tio̍h.",
+        "answer_tl": "Hīnn-á"
     },
     {
         "id": "30",
@@ -273,14 +333,18 @@
             "猜水果"
         ],
         "answer": "甘蔗",
-        "explanation": "紅甘蔗外皮紫紅、內肉潔白，吃甘蔗時吸取清甜汁液，隨後吐出蔗渣。"
+        "explanation": "紅甘蔗外皮紫紅、內肉潔白，吃甘蔗時吸取清甜汁液，隨後吐出蔗渣。",
+        "question_tl": "Âng-pòo pau pe̍h-pòo, tsi̍t tshuì tsia̍h, tsi̍t tshuì thòo.",
+        "answer_tl": "Kam-tsià"
     },
     {
         "id": "31",
         "question": "天頂一抱秧，無水無汁，家己長。",
         "hint": [],
         "answer": "頭髮",
-        "explanation": "長在頭頂上的頭髮如一叢秧苗，不需灌溉澆水自己就會生長生長。"
+        "explanation": "長在頭頂上的頭髮如一叢秧苗，不需灌溉澆水自己就會生長生長。",
+        "question_tl": "Thinn-tíng tsi̍t phō ng, bô tsuí bô tsiap, ka-kī tióng.",
+        "answer_tl": "Thâu-môo"
     },
     {
         "id": "32",
@@ -289,7 +353,9 @@
             "猜地名"
         ],
         "answer": "三義",
-        "explanation": "劉備、關羽、張飛桃園三結義，情義深厚，諧音猜苗栗地名「三義」。"
+        "explanation": "劉備、關羽、張飛桃園三結義，情義深厚，諧音猜苗栗地名「三義」。",
+        "question_tl": "Âng Kuan-kong, pe̍h Lâu-pī, oo Tsiunn-hui, kiat hiann-tī.",
+        "answer_tl": "Sann-gī"
     },
     {
         "id": "33",
@@ -298,7 +364,9 @@
             "猜蟲"
         ],
         "answer": "蜻蜓",
-        "explanation": "蜻蜓頭部圓滾、尾腹修長，身具六足與四片透明翅膀。"
+        "explanation": "蜻蜓頭部圓滾、尾腹修長，身具六足與四片透明翅膀。",
+        "question_tl": "Thâu înn bué ti̍t, la̍k ki kha, sì ki si̍t.",
+        "answer_tl": "Tshiah-tênn (Tshinn-tîng)"
     },
     {
         "id": "34",
@@ -307,7 +375,9 @@
             "猜青菜"
         ],
         "answer": "蔥",
-        "explanation": "青蔥上方是綠色蔥管（青衫），下方是白色蔥白（白褲），根部鬚根如毛卻不會走路。"
+        "explanation": "青蔥上方是綠色蔥管（青衫），下方是白色蔥白（白褲），根部鬚根如毛卻不會走路。",
+        "question_tl": "Tshinn sann tha̍h pe̍h khòo, kha-té senn mn̂g, bē kiânn-lōo.",
+        "answer_tl": "Tshang"
     },
     {
         "id": "35",
@@ -316,7 +386,9 @@
             "猜動物"
         ],
         "answer": "老鼠",
-        "explanation": "老鼠在泥洞地道中築巢穿梭，世代繁衍，天性常偷吃糧食偷咬器物如賊頭。"
+        "explanation": "老鼠在泥洞地道中築巢穿梭，世代繁衍，天性常偷吃糧食偷咬器物如賊頭。",
+        "question_tl": "Thôo-tshù, thôo mn̂g-lâu, senn kiánn senn sun, tsò tsha̍t-thâu.",
+        "answer_tl": "Niáu-tshí"
     },
     {
         "id": "36",
@@ -326,7 +398,9 @@
             "清潔工具"
         ],
         "answer": "掃把",
-        "explanation": "竹掃把上方竹桿光滑，尾端竹枝散開如鬚，平時倚靠牆壁，掃地時拖過地面。"
+        "explanation": "竹掃把上方竹桿光滑，尾端竹枝散開如鬚，平時倚靠牆壁，掃地時拖過地面。",
+        "question_tl": "Thâu kng bué tshiu, uá piah thua thôo.",
+        "answer_tl": "Sau-tshiú"
     },
     {
         "id": "37",
@@ -335,7 +409,9 @@
             "猜動物"
         ],
         "answer": "羊",
-        "explanation": "羊群排泄的小糞便圓圓小小的像黑色豆子，一邊走動一邊散落。"
+        "explanation": "羊群排泄的小糞便圓圓小小的像黑色豆子，一邊走動一邊散落。",
+        "question_tl": "Tsi̍t ê kan-á té oo-tāu, iân-lōo kiânn, iân-lōo lāu.",
+        "answer_tl": "Iûnn"
     },
     {
         "id": "38",
@@ -344,7 +420,9 @@
             "猜地名"
         ],
         "answer": "沙鹿",
-        "explanation": "用竹編菜籃裝沙子，沙子會不斷從孔隙漏出。台語「沙漏」諧音台中地名「沙鹿」（Sa-la̍k）。"
+        "explanation": "用竹編菜籃裝沙子，沙子會不斷從孔隙漏出。台語「沙漏」諧音台中地名「沙鹿」（Sa-la̍k）。",
+        "question_tl": "The̍h tshài-nâ té sua",
+        "answer_tl": "Sua-la̍k"
     },
     {
         "id": "39",
@@ -353,7 +431,9 @@
             "猜地名"
         ],
         "answer": "關廟",
-        "explanation": "三國名將關羽字雲長，祭祀雲長的祠廟就是「關帝廟」，簡稱台南地名「關廟」。"
+        "explanation": "三國名將關羽字雲長，祭祀雲長的祠廟就是「關帝廟」，簡稱台南地名「關廟」。",
+        "question_tl": "Hûn-tiông-sû",
+        "answer_tl": "Kuan-biō"
     },
     {
         "id": "40",
@@ -363,7 +443,9 @@
             "新北市地名"
         ],
         "answer": "澳底",
-        "explanation": "飯匙舀米湯（泔）時一定會伸到鍋底舀起，台語「凹底/壓底」諧音新北地名「澳底」。"
+        "explanation": "飯匙舀米湯（泔）時一定會伸到鍋底舀起，台語「凹底/壓底」諧音新北地名「澳底」。",
+        "question_tl": "Pn̄g-sî siánn ám",
+        "answer_tl": "Ò-té"
     },
     {
         "id": "41",
@@ -372,7 +454,9 @@
             "猜地名"
         ],
         "answer": "五堵",
-        "explanation": "三餐都吃不飽表示還欠兩餐肚子，台語「無肚/有肚」諧音基隆/新北地名「五堵」。"
+        "explanation": "三餐都吃不飽表示還欠兩餐肚子，台語「無肚/有肚」諧音基隆/新北地名「五堵」。",
+        "question_tl": "Sann tǹg tsia̍h bô pá",
+        "answer_tl": "Gōo-tóo"
     },
     {
         "id": "42",
@@ -381,7 +465,9 @@
             "猜地名"
         ],
         "answer": "礁溪",
-        "explanation": "在乾涸的溪床曝曬蘿蔔乾（菜脯），曬乾為焦，乾枯之溪為焦溪，諧音宜蘭地名「礁溪」。"
+        "explanation": "在乾涸的溪床曝曬蘿蔔乾（菜脯），曬乾為焦，乾枯之溪為焦溪，諧音宜蘭地名「礁溪」。",
+        "question_tl": "Khe-té pha̍k tshài-póo",
+        "answer_tl": "Ta-khe (Tshiau-khe)"
     },
     {
         "id": "43",
@@ -391,7 +477,9 @@
             "台中地名"
         ],
         "answer": "烏日",
-        "explanation": "包拯臉黑如墨，鐵面無私如青天白日，黑臉青天即是台中地名「烏日」。"
+        "explanation": "包拯臉黑如墨，鐵面無私如青天白日，黑臉青天即是台中地名「烏日」。",
+        "question_tl": "Pau-tshinn-thinn",
+        "answer_tl": "Oo-ji̍t"
     },
     {
         "id": "44",
@@ -401,7 +489,9 @@
             "彰化地名"
         ],
         "answer": "二水",
-        "explanation": "古井旁常溢水或兩側湧水，台語取其水井之象或諧音彰化地名「二水」。"
+        "explanation": "古井旁常溢水或兩側湧水，台語取其水井之象或諧音彰化地名「二水」。",
+        "question_tl": "Kóo-tsínn pinn",
+        "answer_tl": "Jī-tsúi"
     },
     {
         "id": "45",
@@ -411,7 +501,9 @@
             "苗栗地名"
         ],
         "answer": "頭份",
-        "explanation": "婦女們聚在一起跟互助會（標會），標取第一份會錢稱「頭份」，諧音苗栗地名「頭份」。"
+        "explanation": "婦女們聚在一起跟互助會（標會），標取第一份會錢稱「頭份」，諧音苗栗地名「頭份」。",
+        "question_tl": "Tsa-bóo-lâng hūn-huē-á",
+        "answer_tl": "Thâu-hūn"
     },
     {
         "id": "46",
@@ -420,7 +512,9 @@
             "猜地名"
         ],
         "answer": "知本",
-        "explanation": "喝水要記得水源處，比喻做人不可忘本、「知其根本」，即台東地名「知本」。"
+        "explanation": "喝水要記得水源處，比喻做人不可忘本、「知其根本」，即台東地名「知本」。",
+        "question_tl": "Ím-tsúi-su-guân",
+        "answer_tl": "Ti-pún"
     },
     {
         "id": "47",
@@ -429,14 +523,18 @@
             "猜地名"
         ],
         "answer": "通霄",
-        "explanation": "整夜不睡覺在台語稱「通宵」，諧音苗栗地名「通霄」。"
+        "explanation": "整夜不睡覺在台語稱「通宵」，諧音苗栗地名「通霄」。",
+        "question_tl": "Kui-mî bô khùn",
+        "answer_tl": "Thong-siau"
     },
     {
         "id": "48",
         "question": "它沒有腳,可是會跑,它沒有身體,可是會翻觔斗",
         "hint": [],
         "answer": "颱風",
-        "explanation": "颱風沒有實體身軀與腳，卻能席捲千里旋轉奔馳，造成強風豪雨。"
+        "explanation": "颱風沒有實體身軀與腳，卻能席捲千里旋轉奔馳，造成強風豪雨。",
+        "question_tl": "I bô kha, khó-sī ē tsáu, i bô sin-thé, khó-sī ē phau-lìn-tóo",
+        "answer_tl": "Hong-thai"
     },
     {
         "id": "49",
@@ -446,7 +544,9 @@
             "浴室常見"
         ],
         "answer": "鏡子",
-        "explanation": "鏡中人與照鏡人一樣高大動作一致，但一人在鏡子外、一人在鏡子內。"
+        "explanation": "鏡中人與照鏡人一樣高大動作一致，但一人在鏡子外、一人在鏡子內。",
+        "question_tl": "Nn̄g tsí-muē-á, pênn kuân pênn tuā, tsi̍t lâng tsāi lāi, tsi̍t lâng tsāi guā",
+        "answer_tl": "Kiànn-á"
     },
     {
         "id": "50",
@@ -455,7 +555,9 @@
             "猜一昆蟲"
         ],
         "answer": "蜻蜓",
-        "explanation": "蜻蜓具備六隻腳與前後兩對（共四隻）透明翅膀，身姿輕巧修長。"
+        "explanation": "蜻蜓具備六隻腳與前後兩對（共四隻）透明翅膀，身姿輕巧修長。",
+        "question_tl": "Thâu înn bué ti̍t, la̍k tsiah kha, sì tsiah si̍t.",
+        "answer_tl": "Tshiah-tênn (Tshinn-tîng)"
     },
     {
         "id": "51",
@@ -464,7 +566,9 @@
             "猜一物品"
         ],
         "answer": "桌子",
-        "explanation": "桌子有四隻桌腳、桌面為四角形，有桌「面」卻沒有頭腦腦袋。"
+        "explanation": "桌子有四隻桌腳、桌面為四角形，有桌「面」卻沒有頭腦腦袋。",
+        "question_tl": "Sì kha koh sì kak, ū bīn bô thâu-khak.",
+        "answer_tl": "Toh-á"
     },
     {
         "id": "52",
@@ -473,7 +577,9 @@
             "猜台灣地名"
         ],
         "answer": "恆春",
-        "explanation": "一年四季氣候溫和、四季如春，正是台灣最南端的屏東地名「恆春」。"
+        "explanation": "一年四季氣候溫和、四季如春，正是台灣最南端的屏東地名「恆春」。",
+        "question_tl": "Sù-kuì jû tshun",
+        "answer_tl": "Hîng-tshun"
     },
     {
         "id": "53",
@@ -482,7 +588,9 @@
             "猜食物"
         ],
         "answer": "貢丸",
-        "explanation": "棒球比賽三出局或賽事結束打完叫做「敲完/打完/Out完」，台語諧音可口小吃「貢丸」（Kòng-uân）。"
+        "explanation": "棒球比賽三出局或賽事結束打完叫做「敲完/打完/Out完」，台語諧音可口小吃「貢丸」（Kòng-uân）。",
+        "question_tl": "Pāng-kiû pí-sài kiat-sok",
+        "answer_tl": "Kòng-uân"
     },
     {
         "id": "54",
@@ -492,7 +600,9 @@
             "台北地名"
         ],
         "answer": "景美",
-        "explanation": "買賣小魚不用秤斤論兩，台語挑選尾巴叫「揀尾」，諧音台北地名「景美」（Kíng-bí）。"
+        "explanation": "買賣小魚不用秤斤論兩，台語挑選尾巴叫「揀尾」，諧音台北地名「景美」（Kíng-bí）。",
+        "question_tl": "Bé-buē hî-á bián iōng tshìn",
+        "answer_tl": "Kíng-bí"
     },
     {
         "id": "55",
@@ -502,14 +612,18 @@
             "台北地名"
         ],
         "answer": "新店",
-        "explanation": "新商店開張大吉，就是新開的店面，即新北地名「新店」。"
+        "explanation": "新商店開張大吉，就是新開的店面，即新北地名「新店」。",
+        "question_tl": "Khai-tiunn tāi-kiat",
+        "answer_tl": "Sin-tiàm"
     },
     {
         "id": "56",
         "question": "頭尖尖，尾拖帆，在生無血色，死了遍身紅",
         "hint": [],
         "answer": "蝦子",
-        "explanation": "蝦子活著時身軀透明無血色，煮熟死後全身通紅，頭尖帶鬚尾拖帆。"
+        "explanation": "蝦子活著時身軀透明無血色，煮熟死後全身通紅，頭尖帶鬚尾拖帆。",
+        "question_tl": "Thâu tsiam-tsiam, bué thua phâng, tsāi-senn bô hueh-sik, sí liáu phiàn-sin âng",
+        "answer_tl": "Hê-á"
     },
     {
         "id": "57",
@@ -518,14 +632,18 @@
             "猜古代人名"
         ],
         "answer": "關公",
-        "explanation": "專門關押男人的監獄，即是「關老爺/關男性公眾」，取雙關諧音三國人物「關公」。"
+        "explanation": "專門關押男人的監獄，即是「關老爺/關男性公眾」，取雙關諧音三國人物「關公」。",
+        "question_tl": "Tsa-póo kàm-ga̍k",
+        "answer_tl": "Kuan-kong"
     },
     {
         "id": "58",
         "question": "有嘴無腳倉，有話別人講，有事伊擔當",
         "hint": [],
         "answer": "布袋戲公仔",
-        "explanation": "布袋戲偶由布偶師手指操縱，沒有下半身，由幕後主演代為說話，劇情打鬥全由戲偶承擔。"
+        "explanation": "布袋戲偶由布偶師手指操縱，沒有下半身，由幕後主演代為說話，劇情打鬥全由戲偶承擔。",
+        "question_tl": "Ū tshuì bô kha-tshng, ū uē pa̍t-lâng kóng, ū sū i tam-tng",
+        "answer_tl": "Pòo-tē-hì kong-á"
     },
     {
         "id": "59",
@@ -535,7 +653,9 @@
             "南投地名"
         ],
         "answer": "集集",
-        "explanation": "接吻親嘴嘴對嘴聚在一起，唇齒相依發出唧唧聲，諧音南投地名「集集」。"
+        "explanation": "接吻親嘴嘴對嘴聚在一起，唇齒相依發出唧唧聲，諧音南投地名「集集」。",
+        "question_tl": "Tshin-tshuì",
+        "answer_tl": "Tsi̍p-tsi̍p"
     },
     {
         "id": "60",
@@ -544,7 +664,9 @@
             "猜台中縣地名"
         ],
         "answer": "太平",
-        "explanation": "國家富強、百姓安居樂業即為天下太平，猜台中地名「太平」。"
+        "explanation": "國家富強、百姓安居樂業即為天下太平，猜台中地名「太平」。",
+        "question_tl": "Kok-thài-bîn-an",
+        "answer_tl": "Thài-pîng"
     },
     {
         "id": "61",
@@ -553,7 +675,9 @@
             "猜一縣市名"
         ],
         "answer": "台中",
-        "explanation": "開會時主席入座於主席台正中央，位置在「台座正中」，猜地名「台中」。"
+        "explanation": "開會時主席入座於主席台正中央，位置在「台座正中」，猜地名「台中」。",
+        "question_tl": "Tsú-si̍k tsiū-uī",
+        "answer_tl": "Tâi-tiong"
     },
     {
         "id": "62",
@@ -563,7 +687,9 @@
             "猜彰化縣市地名"
         ],
         "answer": "永靖",
-        "explanation": "西部邊界沒有戰亂兵禍，象徵永遠安定安靖，猜彰化地名「永靖」。"
+        "explanation": "西部邊界沒有戰亂兵禍，象徵永遠安定安靖，猜彰化地名「永靖」。",
+        "question_tl": "Se-suànn bô tsiàn-sū",
+        "answer_tl": "Íng-tsīng"
     },
     {
         "id": "63",
@@ -573,7 +699,9 @@
             "猜彰化縣市地名"
         ],
         "answer": "埔心",
-        "explanation": "白蘿蔔（菜頭）過熟內部老化空心，台語稱「腐心/檨心」，諧音彰化地名「埔心」。"
+        "explanation": "白蘿蔔（菜頭）過熟內部老化空心，台語稱「腐心/檨心」，諧音彰化地名「埔心」。",
+        "question_tl": "Tshài-thâu kuè si̍k",
+        "answer_tl": "Poo-sim"
     },
     {
         "id": "64",
@@ -582,7 +710,9 @@
             "猜動物"
         ],
         "answer": "雞",
-        "explanation": "公雞頭頂尖冠、尾帶長翎，雖然糞便味道濃烈，但料理上桌成了美味佳餚人人喜愛。"
+        "explanation": "公雞頭頂尖冠、尾帶長翎，雖然糞便味道濃烈，但料理上桌成了美味佳餚人人喜愛。",
+        "question_tl": "Thâu tsiam bué tsiam, pàng-sái tshàu hiam-hiam, tsiūnn toh bô lâng hiâm.",
+        "answer_tl": "Ke (Kue)"
     },
     {
         "id": "65",
@@ -592,7 +722,9 @@
             "彰化地名"
         ],
         "answer": "花壇",
-        "explanation": "一年四季繁花綻放的花壇花台，直接對應彰化地名「花壇」。"
+        "explanation": "一年四季繁花綻放的花壇花台，直接對應彰化地名「花壇」。",
+        "question_tl": "Sù-kuì hue khui.",
+        "answer_tl": "Hue-thuân"
     },
     {
         "id": "66",
@@ -602,7 +734,9 @@
             "屏東地名"
         ],
         "answer": "牡丹",
-        "explanation": "牡丹花雍容華貴，自古被譽為「百花之王」與「富貴花」，對應屏東地名「牡丹」。"
+        "explanation": "牡丹花雍容華貴，自古被譽為「百花之王」與「富貴花」，對應屏東地名「牡丹」。",
+        "question_tl": "Hù-kuì-hue.",
+        "answer_tl": "Bóo-tan"
     },
     {
         "id": "67",
@@ -612,7 +746,9 @@
             "台北地名"
         ],
         "answer": "淡水",
-        "explanation": "出自《莊子》名言「君子之交淡如水」，猜新北著名觀光地名「淡水」。"
+        "explanation": "出自《莊子》名言「君子之交淡如水」，猜新北著名觀光地名「淡水」。",
+        "question_tl": "Kun-tsú tsi kau.",
+        "answer_tl": "Tām-tsúi"
     },
     {
         "id": "68",
@@ -622,7 +758,9 @@
             "宜蘭地名"
         ],
         "answer": "頭城",
-        "explanation": "把守進入宜蘭平原的第一道門戶城堡，即宜蘭著名地名「頭城」。"
+        "explanation": "把守進入宜蘭平原的第一道門戶城堡，即宜蘭著名地名「頭城」。",
+        "question_tl": "Pá-siú tē-it kuan.",
+        "answer_tl": "Thâu-siânn"
     },
     {
         "id": "69",
@@ -631,7 +769,9 @@
             "猜動物一種"
         ],
         "answer": "人",
-        "explanation": "著名的斯芬克斯謎題台語版：嬰兒時期四腳爬行，成年兩腳行走，晚年拄拐杖三隻腳，正是「人」的一生。"
+        "explanation": "著名的斯芬克斯謎題台語版：嬰兒時期四腳爬行，成年兩腳行走，晚年拄拐杖三隻腳，正是「人」的一生。",
+        "question_tl": "Tsit khuán tōng-bu̍t tsin kî-khiáu, ji̍t-tshut tang-sing sì ki kha, ji̍t-tsìng-tong-tiong nn̄g ki kha, ji̍t-lo̍h se-suann sann ki kha.",
+        "answer_tl": "Lâng"
     },
     {
         "id": "70",
@@ -640,7 +780,9 @@
             "猜動物一種"
         ],
         "answer": "小雞",
-        "explanation": "雞蛋外殼如甕，蛋白蛋黃如蜜，母雞孵卵二十天破殼而出，成了會走會跳的小雞。"
+        "explanation": "雞蛋外殼如甕，蛋白蛋黃如蜜，母雞孵卵二十天破殼而出，成了會走會跳的小雞。",
+        "question_tl": "Àng-á té tio̍h âng-pe̍h bi̍t, khǹg tī piah-pinn jī-tsa̍p ji̍t, bi̍t-àng lāng phuà tshut kuài-bu̍t, ē senn kha lâi ē huat si̍t.",
+        "answer_tl": "Ke-á (Kiánn-ke)"
     },
     {
         "id": "71",
@@ -649,7 +791,9 @@
             "猜自然現象一種"
         ],
         "answer": "影子",
-        "explanation": "影子通體漆黑卻毫無厚度，燈火一吹滅隨即消失，形影相隨陪伴人到處遊玩。"
+        "explanation": "影子通體漆黑卻毫無厚度，燈火一吹滅隨即消失，形影相隨陪伴人到處遊玩。",
+        "question_tl": "Khuànn sī oo-oo bong po̍h-po̍h, iōng hué kā sio suî piàn bô, tsáu kín tio̍h kín eh tuè eh, sì-kè puê lâng khì tshit-thô.",
+        "answer_tl": "Iánn-á (Iánn)"
     },
     {
         "id": "72",
@@ -658,7 +802,9 @@
             "猜用具一種"
         ],
         "answer": "時鐘",
-        "explanation": "鐘面寫滿十二個刻度數字，肚子裡有機芯運轉，老式發條有插孔上發條，鐘擺來回擺盪。"
+        "explanation": "鐘面寫滿十二個刻度數字，肚子裡有機芯運轉，老式發條有插孔上發條，鐘擺來回擺盪。",
+        "question_tl": "Muá bīn siá kah tsuân sī jī, pak-tóo lāi-té tsng ki-khì, nn̄g ê phīnn-khang tshiah só-sî, tsi̍t lia̍p thuî-á tāng-tāng-hàinn.",
+        "answer_tl": "Sî-tsing"
     },
     {
         "id": "73",
@@ -667,7 +813,9 @@
             "猜用具一種"
         ],
         "answer": "火車",
-        "explanation": "火車車廂連綿長如大蜈蚣，沿線車站載客下客，行駛於專屬鐵道上，其他車輛皆需禮讓。"
+        "explanation": "火車車廂連綿長如大蜈蚣，沿線車站載客下客，行駛於專屬鐵道上，其他車輛皆需禮讓。",
+        "question_tl": "Tsi̍t bué giâ-kang ná iau-tsiann, iân-lōo tsia̍h lâng iân-lōo phiann, khuànn i kuè--lâi tio̍h kín pī, tuā-lōo lóng ài niū i kiânn.",
+        "answer_tl": "Hué-tshia"
     },
     {
         "id": "74",
@@ -676,7 +824,9 @@
             "猜動物一種"
         ],
         "answer": "蝴蝶",
-        "explanation": "蝴蝶身著色彩斑斕的花翅膀，頭上有靈動觸角，穿梭花叢間看似嬉戲，實為採蜜並協助花朵傳粉。"
+        "explanation": "蝴蝶身著色彩斑斕的花翅膀，頭上有靈動觸角，穿梭花叢間看似嬉戲，實為採蜜並協助花朵傳粉。",
+        "question_tl": "Sin tshīng hue-âng tn̂g iûnn-tsong, thâu tì kim-tshiunn tsin ui-hong, hue-luí kóng gún luān hì-lāng, kám tsai uī in thuân-tsong bâng.",
+        "answer_tl": "Ôo-tia̍p"
     },
     {
         "id": "75",
@@ -685,7 +835,9 @@
             "猜器官一種"
         ],
         "answer": "手",
-        "explanation": "人的手掌伸開，五指如五座山嶺，四個指縫如峽谷，指甲宛如山嶺頂端的小瓦舍。"
+        "explanation": "人的手掌伸開，五指如五座山嶺，四個指縫如峽谷，指甲宛如山嶺頂端的小瓦舍。",
+        "question_tl": "Gōo-kóo suann-niá tn̂g koh kāu, keh tio̍h sì tiâu tuā khinn-kau, bē senn tshiū lâi bē huat tsháu, gōo king hiā-tshù tī niá-thâu.",
+        "answer_tl": "Tshiú"
     },
     {
         "id": "76",
@@ -694,7 +846,9 @@
             "猜用具一種"
         ],
         "answer": "汽車",
-        "explanation": "汽車如裝載引擎機器的鐵火柴盒，平時停放在路邊，發動引擎後便奔馳四方。"
+        "explanation": "汽車如裝載引擎機器的鐵火柴盒，平時停放在路邊，發動引擎後便奔馳四方。",
+        "question_tl": "Huan-á-hué a̍p tsng ki-khì, tiānn-tiānn hioh tī tuā-lōo pinn, nā-sī hōo i huat phî-khì, tang-sai-lâm-pak sì-kè khì.",
+        "answer_tl": "Khì-tshia"
     },
     {
         "id": "77",
@@ -703,7 +857,9 @@
             "猜用具一種"
         ],
         "answer": "毛筆",
-        "explanation": "毛筆未沾墨時筆毛潔白如鬚，沾了墨汁隨即變黑，隨著主人手筆揮灑墨水淋漓。"
+        "explanation": "毛筆未沾墨時筆毛潔白如鬚，沾了墨汁隨即變黑，隨著主人手筆揮灑墨水淋漓。",
+        "question_tl": "Siàu-liân tshuì-tshiu pe̍h-phàu-phàu, tsi̍t-ē tsò-tshit suî oo thâu, gōng-gōng tuè tio̍h tsú-lâng tsáu, kan-tann tshuì-nāu ti̍t-ti̍t lâu.",
+        "answer_tl": "Moo-pit"
     },
     {
         "id": "78",
@@ -712,7 +868,9 @@
             "猜動物一種"
         ],
         "answer": "蜻蜓",
-        "explanation": "蜻蜓複眼渾圓，具四片透明輕薄翅膀，空中捕食蚊蟲身手俐落，產卵時輕點水面如洗尾。"
+        "explanation": "蜻蜓複眼渾圓，具四片透明輕薄翅膀，空中捕食蚊蟲身手俐落，產卵時輕點水面如洗尾。",
+        "question_tl": "Tn̂g-tn̂g thâu kui-kiû, nn̄g tuì si̍t-á po̍h koh iù, lîng-khong lia̍h bûn hó sin-tshiú, tî-tiong hòo tsuí sué bué-liu.",
+        "answer_tl": "Tshiah-tênn (Tshinn-tîng)"
     },
     {
         "id": "79",
@@ -721,7 +879,9 @@
             "猜動物一種"
         ],
         "answer": "牛",
-        "explanation": "水牛生性溫馴耐勞，替農夫耕田拖犁任勞任怨，鼻子穿戴銅環牽繩亦甘心吞忍。"
+        "explanation": "水牛生性溫馴耐勞，替農夫耕田拖犁任勞任怨，鼻子穿戴銅環牽繩亦甘心吞忍。",
+        "question_tl": "Tuā-bú kiat sîng kûn, si̍t-tsāi gún sī siōng un-sūn, luê tshân thua tshia siú pún-hūn, tâng-khan kuàn phīnn mā thun-lún.",
+        "answer_tl": "Gû"
     },
     {
         "id": "80",
@@ -730,7 +890,9 @@
             "猜植物一種"
         ],
         "answer": "菅芒",
-        "explanation": "菅芒葉片形似甘蔗葉，秋天盛開白色芒花，滿山遍野隨風搖曳。"
+        "explanation": "菅芒葉片形似甘蔗葉，秋天盛開白色芒花，滿山遍野隨風搖曳。",
+        "question_tl": "Tik-sî tshiūnn kam-tsià, gû-á bé-á siōng ài tsia̍h, tshiu-hong nā lâi pe̍h hue ngiâ, khui kah muá suann iū phiàn-iá.",
+        "answer_tl": "Kuann-bâng"
     },
     {
         "id": "81",
@@ -739,7 +901,9 @@
             "猜動物一種"
         ],
         "answer": "毛蟹",
-        "explanation": "毛蟹雙螯粗壯有力如鋼剪，橫行霸道八方行走，威風凜凜無人敢輕易觸碰。"
+        "explanation": "毛蟹雙螯粗壯有力如鋼剪，橫行霸道八方行走，威風凜凜無人敢輕易觸碰。",
+        "question_tl": "Bú-sū tsin ui-biíng, tshiú giâ kǹg-tsián tsáu pat-hong, it-sing huâinn-hîng kiam ti̍t-tuàn, bô lâng kánn lâi sio-tsioh-mn̄g.",
+        "answer_tl": "Moo-hē"
     },
     {
         "id": "82",
@@ -748,7 +912,9 @@
             "猜植物一種"
         ],
         "answer": "蕃薯",
-        "explanation": "地瓜（蕃薯）與地瓜葉是台灣常民重要糧食，過去富裕人家曾作豬飼料，如今是公認的養生寶貝。"
+        "explanation": "地瓜（蕃薯）與地瓜葉是台灣常民重要糧食，過去富裕人家曾作豬飼料，如今是公認的養生寶貝。",
+        "question_tl": "Pó-puè lâng-lâng ài, kuè kau ê hio̍h mā khì tshái, hù-jū khuànn i sī ti-tshài, khǹg tī tshân-pinn bô lâng tsai.",
+        "answer_tl": "Han-tsû"
     },
     {
         "id": "83",
@@ -757,7 +923,9 @@
             "猜自然物一種"
         ],
         "answer": "月亮",
-        "explanation": "月亮高懸夜空，初一到十五經歷朔望盈虧變化，三十天一個農曆月份循環後又恢復圓滿。"
+        "explanation": "月亮高懸夜空，初一到十五經歷朔望盈虧變化，三十天一個農曆月份循環後又恢復圓滿。",
+        "question_tl": "Kuân-kuân kuà thinn-pinn, ū-sî uan-uan ū-sî înn, sî-kan king-kuè sann-tsa̍p mî, khue-ho̍k guân-tsōng koh sio-kìnn.",
+        "answer_tl": "Gue̍h-niû"
     },
     {
         "id": "84",
@@ -766,7 +934,9 @@
             "猜水果一種"
         ],
         "answer": "柑仔",
-        "explanation": "橘子（柑仔）倒掛枝頭，外皮厚糙而果肉甘甜，果肉分成八至九瓣，秋冬之際成熟採收。"
+        "explanation": "橘子（柑仔）倒掛枝頭，外皮厚糙而果肉甘甜，果肉分成八至九瓣，秋冬之際成熟採收。",
+        "question_tl": "Suann-tíng tò-tiàu-tsú, tshoo phuê iù bah hó tsu-bī, hù-hōo jîn-ke peh káu phān, uī tsiap pak-hong uān tang-i.",
+        "answer_tl": "Kam-á"
     },
     {
         "id": "85",
@@ -775,7 +945,9 @@
             "猜食物一種"
         ],
         "answer": "米飯",
-        "explanation": "稻穀經去殼成白米，在鍋內加水生火悶煮熟透，再以竹飯匙盛入碗中。"
+        "explanation": "稻穀經去殼成白米，在鍋內加水生火悶煮熟透，再以竹飯匙盛入碗中。",
+        "question_tl": "N̂g-n̂g bah pe̍h-pe̍h, tsi̍t tīn ah-á hông pak phuê, tíng lâi im tsuí ē siàn hué, tik-ki kuánn ji̍p tōng-khang té.",
+        "answer_tl": "Bí-pn̄g"
     },
     {
         "id": "86",
@@ -784,7 +956,9 @@
             "猜動物一種"
         ],
         "answer": "螞蟻",
-        "explanation": "螞蟻體型微小，嗅覺極為靈敏，懂得群體分工合作搬運儲備食物。"
+        "explanation": "螞蟻體型微小，嗅覺極為靈敏，懂得群體分工合作搬運儲備食物。",
+        "question_tl": "Bô hueh pak bô phuê, pê tshiū-á m̄-bat pan tshiū-ue, lâng-lâng kóng i hó-phīnn-sai, in sī ha̍p-tsok uī tāi-ke.",
+        "answer_tl": "Káu-hiā"
     },
     {
         "id": "87",
@@ -793,7 +967,9 @@
             "猜動物一種"
         ],
         "answer": "虻仔",
-        "explanation": "蚊子（虻仔）常在夜間床邊嗡嗡作響，吸飽人血如飲紅露酒，一旦被巴掌拍中便粉身碎骨。"
+        "explanation": "蚊子（虻仔）常在夜間床邊嗡嗡作響，吸飽人血如飲紅露酒，一旦被巴掌拍中便粉身碎骨。",
+        "question_tl": "Gín-á khàu enn-enn, tsuan-tsuan pit-kìnn tī bîn-tshn̂g-pinn, âng-lōo-sio-tsiú nā beh thīnn kah tīnn, gōo-jiáu hē suann lí tio̍h bô sin-si.",
+        "answer_tl": "Báng-á"
     },
     {
         "id": "88",
@@ -802,7 +978,9 @@
             "猜用具一種"
         ],
         "answer": "草厝",
-        "explanation": "傳統茅草土角厝四角方正，土磚砌牆，屋頂覆蓋厚實稻草，下雨時雨水順屋頂兩側滑落。"
+        "explanation": "傳統茅草土角厝四角方正，土磚砌牆，屋頂覆蓋厚實稻草，下雨時雨水順屋頂兩側滑落。",
+        "question_tl": "Gû-ko, sì-kak-lô-tô, phuê-á po̍h-po̍h, iōng thôo lâi tsò, thâu-tíng pênn pho, tiū-tsháu tsò bō, tuā-hōo nā lo̍h, hun nn̄g pîng sô.",
+        "answer_tl": "Tsháu-tshù"
     },
     {
         "id": "89",
@@ -811,7 +989,9 @@
             "猜一種水果"
         ],
         "answer": "柚仔",
-        "explanation": "柚子外包白海綿層，內有果瓣，果瓣內飽含晶瑩如米粒的酸甜果汁。"
+        "explanation": "柚子外包白海綿層，內有果瓣，果瓣內飽含晶瑩如米粒的酸甜果汁。",
+        "question_tl": "Lāi-té pau pe̍h pòo, pe̍h pòo lāi-té pau tshâ-se, tshâ-se lāi-té pau bí-lia̍p, bí-lia̍p lāi-té tsham sng-tshòo.",
+        "answer_tl": "Iū-á"
     },
     {
         "id": "90",
@@ -820,7 +1000,9 @@
             "猜自然物一種"
         ],
         "answer": "海湧",
-        "explanation": "海浪湧動翻滾如翻筋斗，海水蔚藍戴著白浪花，無嘴卻發出轟隆隆的濤聲呼嘯。"
+        "explanation": "海浪湧動翻滾如翻筋斗，海水蔚藍戴著白浪花，無嘴卻發出轟隆隆的濤聲呼嘯。",
+        "question_tl": "Bô kha hiah gâu tsáu, bô tshiú iā ē phau-lìn-tóo, tshinn ê sin-khu tì pe̍h thâu, bô tshuì koh ē hù-hù háu.",
+        "answer_tl": "Hái-íng"
     },
     {
         "id": "91",
@@ -829,7 +1011,9 @@
             "猜動作一種"
         ],
         "answer": "穿針",
-        "explanation": "老人家視力減退穿針引線，常先把線頭沾口水抹平捻尖，再小心翼翼穿入針孔。"
+        "explanation": "老人家視力減退穿針引線，常先把線頭沾口水抹平捻尖，再小心翼翼穿入針孔。",
+        "question_tl": "Siūnn beh tshng ngē-kut, a-phô phian-phian thàn bē lu̍t, tò-tshiú tshun khì tsiànn-pîng tshut, ùn tsi̍t-ē tshuì-nāu koh-tsài phut.",
+        "answer_tl": "Tshng tsiam"
     },
     {
         "id": "92",
@@ -838,7 +1022,9 @@
             "猜動作一種"
         ],
         "answer": "挨粿",
-        "explanation": "傳統推石磨磨米漿（挨粿），一邊轉動磨把一邊勺水加米，磨心研磨出乳白香濃的米漿。"
+        "explanation": "傳統推石磨磨米漿（挨粿），一邊轉動磨把一邊勺水加米，磨心研磨出乳白香濃的米漿。",
+        "question_tl": "Iōng-la̍t khan ē-hâi, tsi̍t ê thiam tsuí ji̍p pak-lāi, ē-tsê ê sim thok tíng-tsê, pe̍h-ko bān-bān lâu--tshut-lâi.",
+        "answer_tl": "Ue kué"
     },
     {
         "id": "93",
@@ -847,7 +1033,9 @@
             "猜植物一種"
         ],
         "answer": "飛苓仔菜",
-        "explanation": "菠菜在台語叫「飛苓仔菜」，雖名中有「飛」卻長在泥土菜園裡，長成後被採摘料理。"
+        "explanation": "菠菜在台語叫「飛苓仔菜」，雖名中有「飛」卻長在泥土菜園裡，長成後被採摘料理。",
+        "question_tl": "Senn-ua̍h tsāi thôo-phiânn, tuā-hàn liáu-āu tshài-to miā, lâng-lâng kóng gún tsiok gâu pue, si̍t-tsāi puànn-pōo to bē kiânn.",
+        "answer_tl": "Pue-lîng-á-tshài"
     },
     {
         "id": "94",
@@ -856,7 +1044,9 @@
             "猜用具一種"
         ],
         "answer": "風鼓",
-        "explanation": "風鼓是傳統農具，轉動鼓風手柄吹出風力，將脫粒後的稻穀依飽滿穀粒、空秕殼、雜屑三道分流。"
+        "explanation": "風鼓是傳統農具，轉動鼓風手柄吹出風力，將脫粒後的稻穀依飽滿穀粒、空秕殼、雜屑三道分流。",
+        "question_tl": "Tik-kha ti-tu tóo, ē-hiáu thang tsia̍h bē kiânn-lōo, kha-tsiah phuē-táu hong siàn tóo, hòng-tshut ê mi̍h hun sann lōo.",
+        "answer_tl": "Hong-kóo"
     },
     {
         "id": "95",
@@ -865,7 +1055,9 @@
             "猜水果一種"
         ],
         "answer": "紅柿",
-        "explanation": "紅柿未成熟脫澀前口感生澀，成熟後紅潤飽滿香軟多汁，外皮脆弱不能重壓碰破。"
+        "explanation": "紅柿未成熟脫澀前口感生澀，成熟後紅潤飽滿香軟多汁，外皮脆弱不能重壓碰破。",
+        "question_tl": "Ke-lāng thih ke kuà, nā bô ún n̂g siap-ko-ko, iū phang iū nńg iū hó-khuànn, tshian-bān m̄-thang kā lāng phuà.",
+        "answer_tl": "Âng-khī"
     },
     {
         "id": "96",
@@ -874,7 +1066,9 @@
             "猜植物一種"
         ],
         "answer": "土豆",
-        "explanation": "花生（土豆）地上開花後子房柄鑽入泥土中結莢，莢中多為雙仁，炒熟或水煮皆香脆可口。"
+        "explanation": "花生（土豆）地上開花後子房柄鑽入泥土中結莢，莢中多為雙仁，炒熟或水煮皆香脆可口。",
+        "question_tl": "Khui-hue ē kiat-tsí, tsuan-tsuan kah lí pau siang-senn, senn-tshá ē phang kún ū bī, tuā-lâng gín-á tsia̍h kah sí.",
+        "answer_tl": "Thôo-tāu"
     },
     {
         "id": "97",
@@ -883,7 +1077,9 @@
             "猜用具一種"
         ],
         "answer": "犁",
-        "explanation": "傳統鐵犁頭彎曲厚實，翻動稻田泥土時，泥塊像水鳥般一片片翻起白肚。"
+        "explanation": "傳統鐵犁頭彎曲厚實，翻動稻田泥土時，泥塊像水鳥般一片片翻起白肚。",
+        "question_tl": "Uan-uan ē ti̍t-ti̍t, thih-pio kuà kha kāu koh si̍t, thôo-tsiáu nā-sī tú-tio̍h i, tsi̍t tsiah tsi̍t tsiah píng pe̍h si̍t.",
+        "answer_tl": "Luê"
     },
     {
         "id": "98",
@@ -892,7 +1088,9 @@
             "猜食物一種"
         ],
         "answer": "菱角",
-        "explanation": "菱角生長於水塘水面，外殼深黑堅硬兩端尖翹，蒸煮熟後咬開果肉香鬆甘甜。"
+        "explanation": "菱角生長於水塘水面，外殼深黑堅硬兩端尖翹，蒸煮熟後咬開果肉香鬆甘甜。",
+        "question_tl": "Kah pau pe̍h jîn, guân-pún senn-sîng tī tsuí-bīn, siang-thâu tsiam-tsiam tīng-kut sin, tuā-sè pōo kah tsiáu-àm-hîn.",
+        "answer_tl": "Lîng-kak"
     },
     {
         "id": "99",
@@ -901,7 +1099,9 @@
             "猜食物一種"
         ],
         "answer": "栗仔",
-        "explanation": "板栗生長於帶刺的刺苞中，採收需搖晃敲落，去除外刺苞與堅硬外殼才能品嚐香甜栗肉。"
+        "explanation": "板栗生長於帶刺的刺苞中，採收需搖晃敲落，去除外刺苞與堅硬外殼才能品嚐香甜栗肉。",
+        "question_tl": "Gín-á tsin kî-khiáu, tsia̍h tsi̍t lia̍p bí i tio̍h pá, kiò i lo̍h-suann ài iōng phah, beh kā thǹg-sann tio̍h iōng ká.",
+        "answer_tl": "La̍t-á"
     },
     {
         "id": "100",
@@ -910,7 +1110,9 @@
             "猜植物一種"
         ],
         "answer": "甘蔗",
-        "explanation": "甘蔗修長如竹竿，表皮深黑紫紫，節節高升，榨汁甘甜如蜜備受喜愛。"
+        "explanation": "甘蔗修長如竹竿，表皮深黑紫紫，節節高升，榨汁甘甜如蜜備受喜愛。",
+        "question_tl": "Tn̂g-tn̂g ná tik-ko, kui bīn buah kah oo-sô-sô, thâu-môo hôo-tshiu tsiat-tsiat ko, thn̂g-kam-bi̍t-tīnn tsiòng-lâng o.",
+        "answer_tl": "Kam-tsià"
     },
     {
         "id": "101",
@@ -919,7 +1121,9 @@
             "猜用具一種"
         ],
         "answer": "古井",
-        "explanation": "古井圓圓深沉無法挪動，是昔日村落水源核心，婦女常齊聚井邊汲水洗衣談天。"
+        "explanation": "古井圓圓深沉無法挪動，是昔日村落水源核心，婦女常齊聚井邊汲水洗衣談天。",
+        "question_tl": "Mi̍h-kiānn înn-lián-lián, tshian lâng lâi kng bē khí-sin, m̄-kuán ē-hng ia̍h tsá-àm, tsa-bóo kui tīn lâi sio-thàm.",
+        "answer_tl": "Kóo-tsínn"
     },
     {
         "id": "102",
@@ -928,7 +1132,9 @@
             "猜食物一種"
         ],
         "answer": "檳榔",
-        "explanation": "檳榔生長於高聳樹冠，採收後切去花蒂，剖開包夾荖花紅灰咀嚼食用。"
+        "explanation": "檳榔生長於高聳樹冠，採收後切去花蒂，剖開包夾荖花紅灰咀嚼食用。",
+        "question_tl": "Bué-tíng tsi̍t tīn kâu, kuah lo̍h tē-bīn hông kuah thâu, kuah tio̍h thâu-khak ba̍k-sái lâu, phuà khang hôo-tôo thun lo̍h âu.",
+        "answer_tl": "Pin-nn̂g"
     },
     {
         "id": "103",
@@ -937,7 +1143,9 @@
             "猜用具一種"
         ],
         "answer": "老鼠籠仔",
-        "explanation": "老鼠籠以食物為誘餌門戶半開，老鼠受香氣吸引入內觸動機關，鐵門立即閉鎖無法逃脫。"
+        "explanation": "老鼠籠以食物為誘餌門戶半開，老鼠受香氣吸引入內觸動機關，鐵門立即閉鎖無法逃脫。",
+        "question_tl": "Pia̍t-tsong mn̂g puànn khui, sam-sing-kiú-lé tshiánn lí lâi, lí nā gōng-gōng ta̍h ji̍p-lāi, pau lí bô lōo thang tshut--lâi.",
+        "answer_tl": "Niáu-tshí-lāng-á"
     },
     {
         "id": "104",
@@ -946,7 +1154,9 @@
             "猜用品一種"
         ],
         "answer": "面巾",
-        "explanation": "毛巾看似厚實但質地輕巧，洗滌浸水擰水，擦拭臉頰與身軀。"
+        "explanation": "毛巾看似厚實但質地輕巧，洗滌浸水擰水，擦拭臉頰與身軀。",
+        "question_tl": "Ing-kai ū tsi̍t kin, tshìn khí-lâi ná ē bô sì niú, gōo lâng thua khì phing-phong siû, tsa̍p lâng ká kah bô puànn tih iû.",
+        "answer_tl": "Bīn-kin"
     },
     {
         "id": "105",
@@ -955,7 +1165,9 @@
             "猜動物一種"
         ],
         "answer": "水雞",
-        "explanation": "青蛙（水雞）幼時為蝌蚪長尾無足，長大褪尾長出四腿，遇乾旱池涸時常鼓鳴求雨。"
+        "explanation": "青蛙（水雞）幼時為蝌蚪長尾無足，長大褪尾長出四腿，遇乾旱池涸時常鼓鳴求雨。",
+        "question_tl": "Senn bué bô senn kha, tshī tuā lo̍h-bué huat sì kha, nā-sī tú-tio̍h tuā khó-uān, lâng-lâng ài guá pûn hainn-hah.",
+        "answer_tl": "Tsuí-ke"
     },
     {
         "id": "106",
@@ -964,14 +1176,18 @@
             "猜生理現象一種"
         ],
         "answer": "放屁",
-        "explanation": "放屁有響聲卻無形體，隨空氣擴散帶著特殊氣味，令人猝不及防掩鼻退避。"
+        "explanation": "放屁有響聲卻無形體，隨空氣擴散帶著特殊氣味，令人猝不及防掩鼻退避。",
+        "question_tl": "Siann lâi bô khuànn iánn, ū tsham bī-sòo bô kiâm-siann, hong-thâu luān tuānn hong-bué pī, i nā ik lâi tsiòng-lâng kiann.",
+        "answer_tl": "Pàng-phuì"
     },
     {
         "id": "107",
         "question": "三頭歸一身，四手四腳四平邊，四耳同齊聽更鼓，兩耳柴柴不知音",
         "hint": [],
         "answer": "弄獅",
-        "explanation": "舞獅由兩人共組一隻獅，加上前面引獅的大頭佛，三顆頭、四手四腳，配合鑼鼓聲活靈活現。"
+        "explanation": "舞獅由兩人共組一隻獅，加上前面引獅的大頭佛，三顆頭、四手四腳，配合鑼鼓聲活靈活現。",
+        "question_tl": "Sann thâu kui tsi̍t sin, sì tshiú sì kha sì pîng pinn, sì hīnn tâng-tsê thiann kinn-kóo, nn̄g hīnn tshâ-tshâ put-ti-im",
+        "answer_tl": "Lāng-sai"
     },
     {
         "id": "108",
@@ -980,7 +1196,9 @@
             "猜器官兩種"
         ],
         "answer": "頭、耳",
-        "explanation": "頭部長有七孔（雙眼、雙耳、兩鼻孔、一嘴）各司其職，兩隻耳朵長在兩側卻終生無法相見。"
+        "explanation": "頭部長有七孔（雙眼、雙耳、兩鼻孔、一嘴）各司其職，兩隻耳朵長在兩側卻終生無法相見。",
+        "question_tl": "Tsio̍h-thâu tshit ê khang, phīnn khuànn thiann tsia̍h tsuân tsāi-kiânn, tsi̍t tsâng tshiū-á nn̄g phìnn hio̍h, lú lâi lú khì khuànn bē tio̍h.",
+        "answer_tl": "Thâu, Hīnn-á"
     },
     {
         "id": "109",
@@ -989,7 +1207,9 @@
             "猜工作一種"
         ],
         "answer": "駛牛車",
-        "explanation": "農夫駕駛牛車，人牛合為四眼，老牛在前方喘氣拉車，農夫在後座悠閒翹腳撚鬍鬚。"
+        "explanation": "農夫駕駛牛車，人牛合為四眼，老牛在前方喘氣拉車，農夫在後座悠閒翹腳撚鬍鬚。",
+        "question_tl": "Nn̄g tshiú sì ba̍k ba̍k-tsiu, thâu-tsîng tshuán lâi āu-piah hiu, sì kha piànn-miā ti̍t-ti̍t iô, nn̄g kha khiau-khiau lián tshuì-tshiu.",
+        "answer_tl": "Sái gû-tshia"
     },
     {
         "id": "110",
@@ -999,6 +1219,8 @@
             "古時人家裡常有"
         ],
         "answer": "井",
-        "explanation": "水井以八角或圓形石砌成，是古代人家的日常生命之泉，沒有井水就會口乾舌燥。"
+        "explanation": "水井以八角或圓形石砌成，是古代人家的日常生命之泉，沒有井水就會口乾舌燥。",
+        "question_tl": "Tsi̍t ki tshuì, peh tsiah kha, bô i lí ē tsin tshuì-ta",
+        "answer_tl": "Tsínn"
     }
 ]

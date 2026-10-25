@@ -141,12 +141,31 @@ html, body {
     overflow-y: auto; /* 內容較多時可平滑捲動，避免截斷 */
 }
 
+.question-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 720px;
+}
+
 #question {
     font-size: 1.8rem;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
     line-height: 1.45;
     word-break: keep-all; /* 中文換行較美觀 */
     overflow-wrap: break-word; /* 長單字強制換行 */
+}
+
+.question-tl {
+    font-size: 1.12rem;
+    color: #64748B;
+    font-weight: 500;
+    margin-top: 2px;
+    margin-bottom: 14px;
+    line-height: 1.5;
+    font-style: italic;
+    letter-spacing: 0.3px;
+    word-break: break-word;
 }
 
 #hint-display {
@@ -190,7 +209,17 @@ html, body {
     font-size: 1.9rem;
     text-align: center;
     overflow-wrap: break-word;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
+}
+
+.answer-tl {
+    font-size: 1.25rem;
+    color: #64748B;
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-style: italic;
+    letter-spacing: 0.3px;
+    word-break: break-word;
 }
 
 #explanation-display {
@@ -266,6 +295,13 @@ html, body {
     
     #question {
         font-size: 1.4rem;
+        margin-bottom: 6px;
+    }
+
+    .question-tl {
+        font-size: 0.95rem;
+        margin-top: 0;
+        margin-bottom: 10px;
     }
     
     #hint-display {
@@ -279,6 +315,11 @@ html, body {
 
     #answer-display {
         font-size: 1.5rem;
+        margin-bottom: 4px;
+    }
+
+    .answer-tl {
+        font-size: 1.05rem;
         margin-bottom: 8px;
     }
 
