@@ -276,5 +276,49 @@ document.getElementById('btn-answer').onclick = () => {
     // 點擊「看答案」按鈕直接強制跳到顯示答案
     showAnswer();
 };
+// 字體大小控制（支援電視大螢幕與長輩使用）
+function initFontSize() {
+    let savedSize = 'small';
+    try {
+        savedSize = localStorage.getItem('preferred-font-size') || 'small';
+    } catch (e) {
+        console.warn('LocalStorage not accessible:', e);
+    }
+    setFontSize(savedSize);
+
+    const buttons = document.querySelectorAll('.font-btn');
+    buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const size = btn.getAttribute('data-size');
+            setFontSize(size);
+        });
+    });
+}
+
+function setFontSize(size) {
+    const validSizes = ['small', 'medium', 'large'];
+    const chosenSize = validSizes.includes(size) ? size : 'small';
+
+    document.body.classList.remove('font-size-small', 'font-size-medium', 'font-size-large');
+    document.body.classList.add(`font-size-${chosenSize}`);
+
+    document.querySelectorAll('.font-btn').forEach(btn => {
+        if (btn.getAttribute('data-size') === chosenSize) {
+            btn.classList.add('active');
+            btn.setAttribute('aria-pressed', 'true');
+        } else {
+            btn.classList.remove('active');
+            btn.setAttribute('aria-pressed', 'false');
+        }
+    });
+
+    try {
+        localStorage.setItem('preferred-font-size', chosenSize);
+    } catch (e) {
+        // 忽略 storage 存取限制
+    }
+}
+
 // 啟動！
+initFontSize();
 loadData();

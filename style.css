@@ -1,3 +1,45 @@
+:root {
+    /* 預設小字體（標準大小） */
+    --question-font-size: 1.8rem;
+    --question-tl-font-size: 1.12rem;
+    --hint-font-size: 1.3rem;
+    --answer-font-size: 1.9rem;
+    --answer-tl-font-size: 1.25rem;
+    --explanation-font-size: 1.05rem;
+    --badge-font-size: 0.85rem;
+    --btn-font-size: 16px;
+    --btn-padding: 8px 18px;
+    --content-max-width: 720px;
+}
+
+/* 中字體 */
+body.font-size-medium {
+    --question-font-size: 2.5rem;
+    --question-tl-font-size: 1.45rem;
+    --hint-font-size: 1.65rem;
+    --answer-font-size: 2.6rem;
+    --answer-tl-font-size: 1.55rem;
+    --explanation-font-size: 1.3rem;
+    --badge-font-size: 1rem;
+    --btn-font-size: 18px;
+    --btn-padding: 10px 22px;
+    --content-max-width: 920px;
+}
+
+/* 大字體（專為電視與長輩設計） */
+body.font-size-large {
+    --question-font-size: 3.4rem;
+    --question-tl-font-size: 1.9rem;
+    --hint-font-size: 2.2rem;
+    --answer-font-size: 3.4rem;
+    --answer-tl-font-size: 2.05rem;
+    --explanation-font-size: 1.6rem;
+    --badge-font-size: 1.25rem;
+    --btn-font-size: 22px;
+    --btn-padding: 12px 28px;
+    --content-max-width: 1150px;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -32,6 +74,67 @@ html, body {
     gap: 12px;
 }
 
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+/* 字體大小控制器 */
+.font-size-control {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #F1F5F9;
+    padding: 3px 6px;
+    border-radius: 999px;
+    border: 1px solid #E2E8F0;
+}
+
+.font-control-label {
+    font-size: 0.85rem;
+    color: #64748B;
+    font-weight: 600;
+    margin-left: 4px;
+    user-select: none;
+    white-space: nowrap;
+}
+
+.font-btn-group {
+    display: inline-flex;
+    border-radius: 999px;
+    background: #E2E8F0;
+    padding: 2px;
+    gap: 2px;
+}
+
+.font-btn {
+    border: none;
+    background: transparent;
+    color: #475569;
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    user-select: none;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.font-btn:hover:not(.active) {
+    color: #1E293B;
+    background: #CBD5E1;
+}
+
+.font-btn.active {
+    background: #5E5DF0;
+    color: #FFFFFF;
+    box-shadow: 0 2px 6px rgba(94, 93, 240, 0.35);
+}
+
 .btn {
     background: #5E5DF0;
     border-radius: 999px;
@@ -40,19 +143,19 @@ html, body {
     color: #FFFFFF;
     cursor: pointer;
     font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
-    font-size: 16px;
+    font-size: var(--btn-font-size);
     font-weight: 700;
-    line-height: 24px;
+    line-height: 1.4;
     opacity: 1;
     outline: 0 solid transparent;
-    padding: 8px 18px;
+    padding: var(--btn-padding);
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
     width: fit-content;
     word-break: break-word;
     border: 0;
-    transition: opacity 0.2s ease, transform 0.1s ease;
+    transition: opacity 0.2s ease, transform 0.1s ease, font-size 0.2s ease, padding 0.2s ease;
 }
 
 .btn:active:not(:disabled) {
@@ -107,7 +210,7 @@ html, body {
     align-items: center;
     justify-content: center;
     padding: 5px 14px;
-    font-size: 0.85rem;
+    font-size: var(--badge-font-size);
     font-weight: 600;
     border-radius: 999px;
     background: #EEF2FF;
@@ -145,19 +248,22 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 720px;
+    max-width: var(--content-max-width);
+    width: 100%;
+    transition: max-width 0.25s ease;
 }
 
 #question {
-    font-size: 1.8rem;
+    font-size: var(--question-font-size);
     margin-bottom: 10px;
     line-height: 1.45;
     word-break: keep-all; /* 中文換行較美觀 */
     overflow-wrap: break-word; /* 長單字強制換行 */
+    transition: font-size 0.25s ease;
 }
 
 .question-tl {
-    font-size: 1.12rem;
+    font-size: var(--question-tl-font-size);
     color: #64748B;
     font-weight: 500;
     margin-top: 2px;
@@ -166,15 +272,17 @@ html, body {
     font-style: italic;
     letter-spacing: 0.3px;
     word-break: break-word;
+    transition: font-size 0.25s ease;
 }
 
 #hint-display {
     min-height: 1.6em;
     margin-top: 10px;
-    font-size: 1.3rem;
+    font-size: var(--hint-font-size);
     color: #555;
     line-height: 1.8;
     overflow-wrap: break-word;
+    transition: font-size 0.25s ease;
 }
 
 /* 答案與解題說明區塊 */
@@ -184,8 +292,9 @@ html, body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 620px;
+    max-width: var(--content-max-width);
     padding: 0 10px;
+    transition: max-width 0.25s ease;
 }
 
 @keyframes fadeIn {
@@ -206,20 +315,22 @@ html, body {
 #answer-display {
     font-weight: bold;
     color: #e74c3c;
-    font-size: 1.9rem;
+    font-size: var(--answer-font-size);
     text-align: center;
     overflow-wrap: break-word;
     margin-bottom: 6px;
+    transition: font-size 0.25s ease;
 }
 
 .answer-tl {
-    font-size: 1.25rem;
+    font-size: var(--answer-tl-font-size);
     color: #64748B;
     font-weight: 600;
     margin-bottom: 12px;
     font-style: italic;
     letter-spacing: 0.3px;
     word-break: break-word;
+    transition: font-size 0.25s ease;
 }
 
 #explanation-display {
@@ -229,12 +340,13 @@ html, body {
     border-radius: 12px;
     padding: 12px 18px;
     color: #334155;
-    font-size: 1.05rem;
+    font-size: var(--explanation-font-size);
     line-height: 1.65;
     text-align: left;
     width: 100%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
     word-break: break-word;
+    transition: font-size 0.25s ease;
 }
 
 .exp-title {
@@ -264,6 +376,42 @@ html, body {
 
 /* 響應式：小螢幕調整字體與間距 */
 @media (max-width: 480px) {
+    :root {
+        --question-font-size: 1.5rem;
+        --question-tl-font-size: 0.95rem;
+        --hint-font-size: 1.2rem;
+        --answer-font-size: 1.6rem;
+        --answer-tl-font-size: 1.05rem;
+        --explanation-font-size: 0.95rem;
+        --badge-font-size: 0.8rem;
+        --btn-font-size: 0.95rem;
+        --btn-padding: 8px 12px;
+    }
+
+    body.font-size-medium {
+        --question-font-size: 1.85rem;
+        --question-tl-font-size: 1.15rem;
+        --hint-font-size: 1.4rem;
+        --answer-font-size: 2.0rem;
+        --answer-tl-font-size: 1.25rem;
+        --explanation-font-size: 1.1rem;
+        --badge-font-size: 0.9rem;
+        --btn-font-size: 1.05rem;
+        --btn-padding: 9px 14px;
+    }
+
+    body.font-size-large {
+        --question-font-size: 2.3rem;
+        --question-tl-font-size: 1.35rem;
+        --hint-font-size: 1.6rem;
+        --answer-font-size: 2.5rem;
+        --answer-tl-font-size: 1.45rem;
+        --explanation-font-size: 1.25rem;
+        --badge-font-size: 1rem;
+        --btn-font-size: 1.15rem;
+        --btn-padding: 10px 16px;
+    }
+
     #app {
         padding: 8px 10px;
         gap: 8px;
@@ -274,9 +422,21 @@ html, body {
         gap: 6px;
     }
 
-    .btn {
-        font-size: 0.95rem;
-        padding: 8px 12px;
+    .nav-right {
+        gap: 6px;
+    }
+
+    .font-control-label {
+        display: none; /* 手機空間緊湊時隱藏標籤，只保留按鈕 */
+    }
+
+    .font-size-control {
+        padding: 2px 4px;
+    }
+
+    .font-btn {
+        padding: 3px 7px;
+        font-size: 0.78rem;
     }
     
     .progress-text {
@@ -284,28 +444,17 @@ html, body {
     }
 
     .progress-container {
-        min-width: 70px;
+        min-width: 65px;
     }
 
     .status-badge {
-        font-size: 0.8rem;
         padding: 4px 10px;
         margin-bottom: 10px;
     }
-    
-    #question {
-        font-size: 1.4rem;
-        margin-bottom: 6px;
-    }
 
     .question-tl {
-        font-size: 0.95rem;
         margin-top: 0;
         margin-bottom: 10px;
-    }
-    
-    #hint-display {
-        font-size: 1.2rem;
     }
     
     .answer-section {
@@ -314,17 +463,14 @@ html, body {
     }
 
     #answer-display {
-        font-size: 1.5rem;
         margin-bottom: 4px;
     }
 
     .answer-tl {
-        font-size: 1.05rem;
         margin-bottom: 8px;
     }
 
     #explanation-display {
-        font-size: 0.95rem;
         padding: 10px 14px;
         line-height: 1.55;
     }
