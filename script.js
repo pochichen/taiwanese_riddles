@@ -95,6 +95,19 @@ function handleRouting() {
     displayRiddle(riddles[currentIndex]);
 }
 
+function showAnswer() {
+    const answerSection = document.getElementById('answer-section');
+    if (answerSection) {
+        answerSection.classList.remove('hidden');
+    }
+    const answerDisplay = document.getElementById('answer-display');
+    if (answerDisplay) {
+        answerDisplay.classList.remove('hidden');
+    }
+    currentStep = 2; // 進入答案模式
+    updateStatusBadge('answer');
+}
+
 function displayRiddle(item) {
     console.log("正在顯示題目 ID:", item.id);
     document.getElementById('question').innerText = item.question;
@@ -104,8 +117,24 @@ function displayRiddle(item) {
     hintDisplay.innerHTML = ""; 
     hintDisplay.classList.add('hidden');
     
-    document.getElementById('answer-display').innerText = `答案：${item.answer}`;
-    document.getElementById('answer-display').classList.add('hidden');
+    // 初始化答案與由來解析
+    const answerSection = document.getElementById('answer-section');
+    if (answerSection) answerSection.classList.add('hidden');
+
+    const answerDisplay = document.getElementById('answer-display');
+    answerDisplay.innerText = `答案：${item.answer}`;
+    answerDisplay.classList.add('hidden');
+
+    const expDisplay = document.getElementById('explanation-display');
+    if (expDisplay) {
+        if (item.explanation) {
+            expDisplay.innerHTML = `<span class="exp-title">📖 解析：</span>${item.explanation}`;
+            expDisplay.classList.remove('hidden');
+        } else {
+            expDisplay.innerHTML = "";
+            expDisplay.classList.add('hidden');
+        }
+    }
     
     // 重設狀態
     currentStep = 0; 
@@ -127,7 +156,6 @@ function displayRiddle(item) {
 function handleAdvanceStep() {
     const item = riddles[currentIndex];
     const hintDisplay = document.getElementById('hint-display');
-    const answerDisplay = document.getElementById('answer-display');
     const hints = Array.isArray(item.hint) ? item.hint : [];
 
     // 狀態 0 或 1：處理提示顯示
@@ -150,9 +178,7 @@ function handleAdvanceStep() {
                 currentStep = 1; // 先讓使用者看「無提示」，下次按才出答案
                 updateStatusBadge('hint', { current: 0, total: 0 });
             } else {
-                answerDisplay.classList.remove('hidden');
-                currentStep = 2; // 進入答案模式
-                updateStatusBadge('answer');
+                showAnswer();
             }
         }
     } 
@@ -213,9 +239,7 @@ document.addEventListener('keydown', (e) => {
             break;
         case 'ArrowDown':
             e.preventDefault();
-            document.getElementById('answer-display').classList.remove('hidden');
-            currentStep = 2;
-            updateStatusBadge('answer');
+            showAnswer();
             break;
         case 'Space':
             e.preventDefault();
@@ -238,9 +262,7 @@ document.getElementById('btn-next').onclick = () => {
 document.getElementById('btn-hint').onclick = handleHintClick;
 document.getElementById('btn-answer').onclick = () => {
     // 點擊「看答案」按鈕直接強制跳到顯示答案
-    document.getElementById('answer-display').classList.remove('hidden');
-    currentStep = 2;
-    updateStatusBadge('answer');
+    showAnswer();
 };
 // 啟動！
 loadData();

@@ -137,39 +137,80 @@ html, body {
     text-align: center;
     position: relative;
     min-height: 0; /* 關鍵：允許 flex 子元素縮小至小於內容尺寸 */
-    padding: 20px 0;
-    overflow: hidden; /* 內容過長時隱藏而非撐大容器 */
+    padding: 15px 12px;
+    overflow-y: auto; /* 內容較多時可平滑捲動，避免截斷 */
 }
 
 #question {
     font-size: 1.8rem;
-    margin-bottom: 20px;
-    line-height: 1.4;
+    margin-bottom: 16px;
+    line-height: 1.45;
     word-break: keep-all; /* 中文換行較美觀 */
     overflow-wrap: break-word; /* 長單字強制換行 */
 }
 
 #hint-display {
     min-height: 1.6em;
-    margin-top: 15px;
-    font-size: 1.5rem;
+    margin-top: 10px;
+    font-size: 1.3rem;
     color: #555;
     line-height: 1.8;
     overflow-wrap: break-word;
 }
 
+/* 答案與解題說明區塊 */
+.answer-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 620px;
+    padding: 0 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.answer-section:not(.hidden) {
+    animation: fadeIn 0.3s ease forwards;
+}
+
 #answer-display {
-    position: absolute;
-    bottom: 15%;
-    left: 50%;
-    transform: translateX(-50%);
     font-weight: bold;
     color: #e74c3c;
-    font-size: 2rem;
-    transition: transform 0.3s ease;
-    width: 90%;
+    font-size: 1.9rem;
     text-align: center;
     overflow-wrap: break-word;
+    margin-bottom: 10px;
+}
+
+#explanation-display {
+    background: #F8FAFC;
+    border: 1px solid #E2E8F0;
+    border-left: 4px solid #5E5DF0;
+    border-radius: 12px;
+    padding: 12px 18px;
+    color: #334155;
+    font-size: 1.05rem;
+    line-height: 1.65;
+    text-align: left;
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    word-break: break-word;
+}
+
+.exp-title {
+    font-weight: 700;
+    color: #4338CA;
 }
 
 /* 底部控制按鈕 */
@@ -181,10 +222,15 @@ html, body {
     flex-shrink: 0; /* 關鍵：永不縮小，確保按鈕永遠可見 */
 }
 
-/* 改用 opacity 控制顯示，可以讓出現過程更平滑 */
+/* 控制顯示與平滑隱藏 */
 .hidden {
     opacity: 0;
     pointer-events: none; /* 隱藏時不可點擊 */
+}
+
+.answer-section.hidden,
+.explanation-text.hidden {
+    display: none;
 }
 
 /* 響應式：小螢幕調整字體與間距 */
@@ -226,11 +272,23 @@ html, body {
         font-size: 1.2rem;
     }
     
+    .answer-section {
+        margin-top: 14px;
+        padding: 0 4px;
+    }
+
     #answer-display {
         font-size: 1.5rem;
+        margin-bottom: 8px;
+    }
+
+    #explanation-display {
+        font-size: 0.95rem;
+        padding: 10px 14px;
+        line-height: 1.55;
     }
     
     .container {
-        padding: 10px 0;
+        padding: 10px 4px;
     }
 }
