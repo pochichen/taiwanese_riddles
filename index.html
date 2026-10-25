@@ -11,10 +11,17 @@
     <div id="app">
         <div class="top-nav">
             <button id="btn-prev" class="btn top-left">⬅️ 上一題</button>
+            <div id="progress-container" class="progress-container">
+                <span id="progress-text" class="progress-text">載入中...</span>
+                <div class="progress-bar-bg" aria-hidden="true">
+                    <div id="progress-bar" class="progress-bar-fill"></div>
+                </div>
+            </div>
             <button id="btn-next" class="btn top-right">下一題 ➡️</button>
         </div>
 
         <main class="container">
+            <div id="status-badge" class="status-badge">🤔 思考中</div>
             <h1 id="question">載入中...</h1>
             <div id="hint-display" class="hint-text hidden"></div>
             <div id="answer-display" class="answer-text hidden"></div>

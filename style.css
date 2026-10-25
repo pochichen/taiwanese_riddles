@@ -25,9 +25,11 @@ html, body {
 .top-nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     flex-shrink: 0; /* 防止被壓縮 */
     padding: 0 16px; /* 給邊緣一點呼吸空間 */
+    gap: 12px;
 }
 
 .btn {
@@ -50,6 +52,79 @@ html, body {
     width: fit-content;
     word-break: break-word;
     border: 0;
+    transition: opacity 0.2s ease, transform 0.1s ease;
+}
+
+.btn:active:not(:disabled) {
+    transform: scale(0.97);
+}
+
+.btn:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* 題目進度指示器 */
+.progress-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    max-width: 220px;
+    min-width: 90px;
+}
+
+.progress-text {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #4b5563;
+    margin-bottom: 6px;
+    white-space: nowrap;
+    letter-spacing: 0.5px;
+}
+
+.progress-bar-bg {
+    width: 100%;
+    height: 6px;
+    background-color: #E2E8F0;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #5E5DF0, #818cf8);
+    border-radius: 999px;
+    transition: width 0.35s ease;
+}
+
+/* 答題狀態標籤 */
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 14px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 999px;
+    background: #EEF2FF;
+    color: #4F46E5;
+    margin-bottom: 14px;
+    user-select: none;
+    transition: all 0.25s ease;
+}
+
+.status-badge.status-hint {
+    background: #FEF3C7;
+    color: #B45309;
+}
+
+.status-badge.status-answer {
+    background: #DCFCE7;
+    color: #15803D;
 }
 
 /* 主要內容區域 */
@@ -115,28 +190,47 @@ html, body {
 /* 響應式：小螢幕調整字體與間距 */
 @media (max-width: 480px) {
     #app {
-        padding: 8px 12px;
+        padding: 8px 10px;
         gap: 8px;
     }
     
+    .top-nav {
+        padding: 0 4px;
+        gap: 6px;
+    }
+
     .btn {
-        font-size: 1.2rem;
-        padding: 10px 16px;
+        font-size: 0.95rem;
+        padding: 8px 12px;
+    }
+    
+    .progress-text {
+        font-size: 0.8rem;
+    }
+
+    .progress-container {
+        min-width: 70px;
+    }
+
+    .status-badge {
+        font-size: 0.8rem;
+        padding: 4px 10px;
+        margin-bottom: 10px;
     }
     
     #question {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     
     #hint-display {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     
     #answer-display {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
     
     .container {
-        padding: 15px 0;
+        padding: 10px 0;
     }
 }

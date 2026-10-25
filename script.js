@@ -28,6 +28,48 @@ async function loadData() {
     }
 }
 
+function updateProgress() {
+    const progressText = document.getElementById('progress-text');
+    const progressBar = document.getElementById('progress-bar');
+    if (!progressText || !progressBar || riddles.length === 0) return;
+
+    const hasIntro = riddles[0] && String(riddles[0].id) === "0";
+    const totalRiddles = hasIntro ? riddles.length - 1 : riddles.length;
+
+    if (hasIntro && currentIndex === 0) {
+        progressText.innerText = `說明 (共 ${totalRiddles} 題)`;
+        progressBar.style.width = '0%';
+    } else {
+        const currentNum = hasIntro ? currentIndex : currentIndex + 1;
+        progressText.innerText = `第 ${currentNum} / ${totalRiddles} 題`;
+        const percentage = Math.round((currentNum / totalRiddles) * 100);
+        progressBar.style.width = `${Math.min(100, Math.max(0, percentage))}%`;
+    }
+}
+
+function updateStatusBadge(state, detail = {}) {
+    const badge = document.getElementById('status-badge');
+    if (!badge) return;
+
+    badge.className = 'status-badge';
+    if (state === 'intro') {
+        badge.innerText = '📖 操作引導';
+    } else if (state === 'thinking') {
+        badge.innerText = '🤔 思考中';
+    } else if (state === 'hint') {
+        badge.classList.add('status-hint');
+        const { current, total } = detail;
+        if (total > 0) {
+            badge.innerText = `💡 提示 (${current}/${total})`;
+        } else {
+            badge.innerText = '💡 此題無提示';
+        }
+    } else if (state === 'answer') {
+        badge.classList.add('status-answer');
+        badge.innerText = '🎉 答案揭曉';
+    }
+}
+
 function handleRouting() {
     const hash = window.location.hash;
     console.log("3. 當前 Hash:", hash);
@@ -45,11 +87,8 @@ function handleRouting() {
     if (currentIndex === -1) {
         console.log("4. 找不到對應 ID，導向第一題");
         currentIndex = 0;
-        // 只有在完全沒 hash 的情況下才更新 hash，避免無窮迴圈
-        if (!hash.includes('id=')) {
-            window.location.hash = `id=${riddles[0].id}`;
-            return; // hash 改變會觸發 onhashchange，所以這裡 return
-        }
+        window.location.hash = `id=${riddles[0].id}`;
+        return; // hash 改變會觸發 onhashchange，所以這裡 return
     }
     
     currentStep = 0;
@@ -75,33 +114,45 @@ function displayRiddle(item) {
     // 更新導覽按鈕
     document.getElementById('btn-prev').disabled = (currentIndex === 0);
     document.getElementById('btn-next').disabled = (currentIndex === riddles.length - 1);
+
+    // 更新進度指示與當前狀態標籤
+    updateProgress();
+    if (String(item.id) === "0") {
+        updateStatusBadge('intro');
+    } else {
+        updateStatusBadge('thinking');
+    }
 }
 
 function handleAdvanceStep() {
     const item = riddles[currentIndex];
     const hintDisplay = document.getElementById('hint-display');
     const answerDisplay = document.getElementById('answer-display');
+    const hints = Array.isArray(item.hint) ? item.hint : [];
 
     // 狀態 0 或 1：處理提示顯示
     if (currentStep === 0 || currentStep === 1) {
-        if (item.hint && currentHintIndex < item.hint.length) {
+        if (hints.length > 0 && currentHintIndex < hints.length) {
             // 如果還有提示沒顯示
             const newHint = document.createElement('div');
-            newHint.innerText = `提示 ${currentHintIndex + 1}：${item.hint[currentHintIndex]}`;
+            newHint.innerText = `提示 ${currentHintIndex + 1}：${hints[currentHintIndex]}`;
             hintDisplay.appendChild(newHint);
             hintDisplay.classList.remove('hidden');
             
             currentHintIndex++;
             currentStep = 1; // 進入提示模式
+            updateStatusBadge('hint', { current: currentHintIndex, total: hints.length });
         } else {
             // 沒有提示或提示已顯示完畢 -> 顯示答案
-            if (item.hint.length === 0 && currentStep === 0) {
+            if (hints.length === 0 && currentStep === 0) {
                 hintDisplay.innerText = "此題無提示";
                 hintDisplay.classList.remove('hidden');
                 currentStep = 1; // 先讓使用者看「無提示」，下次按才出答案
+                updateStatusBadge('hint', { current: 0, total: 0 });
             } else {
                 answerDisplay.classList.remove('hidden');
                 currentStep = 2; // 進入答案模式
+                updateStatusBadge('answer');
             }
         }
     } 
@@ -113,30 +164,32 @@ function handleAdvanceStep() {
     }
 }
 
-// 新增：專門處理提示按鈕的邏輯 - 只顯示提示，不顯示答案
+// 專門處理提示按鈕的邏輯 - 只顯示提示，不顯示答案
 function handleHintClick() {
     const item = riddles[currentIndex];
     const hintDisplay = document.getElementById('hint-display');
+    const hints = Array.isArray(item.hint) ? item.hint : [];
 
     // 如果還有提示沒顯示
-    if (item.hint && currentHintIndex < item.hint.length) {
+    if (hints.length > 0 && currentHintIndex < hints.length) {
         const newHint = document.createElement('div');
-        newHint.innerText = `提示 ${currentHintIndex + 1}：${item.hint[currentHintIndex]}`;
+        newHint.innerText = `提示 ${currentHintIndex + 1}：${hints[currentHintIndex]}`;
         hintDisplay.appendChild(newHint);
         hintDisplay.classList.remove('hidden');
         
         currentHintIndex++;
         currentStep = 1; // 進入提示模式
-    } else if (currentHintIndex === 0 && item.hint && item.hint.length === 0) {
+        updateStatusBadge('hint', { current: currentHintIndex, total: hints.length });
+    } else if (currentHintIndex === 0 && hints.length === 0) {
         // 完全沒有提示的情況
         hintDisplay.innerText = "此題無提示";
         hintDisplay.classList.remove('hidden');
         currentStep = 1;
+        updateStatusBadge('hint', { current: 0, total: 0 });
     }
-    // 如果提示已經顯示完畢，什麼都不做（不顯示答案）
 }
 
-// 修改鍵盤監聽
+// 鍵盤監聽
 document.addEventListener('keydown', (e) => {
     // 防止在輸入框中觸發（雖然目前沒有輸入框，但以防萬一）
     if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
@@ -162,6 +215,7 @@ document.addEventListener('keydown', (e) => {
             e.preventDefault();
             document.getElementById('answer-display').classList.remove('hidden');
             currentStep = 2;
+            updateStatusBadge('answer');
             break;
         case 'Space':
             e.preventDefault();
@@ -180,12 +234,13 @@ document.getElementById('btn-prev').onclick = () => {
 document.getElementById('btn-next').onclick = () => {
     if (currentIndex < riddles.length - 1) window.location.hash = `id=${riddles[currentIndex + 1].id}`;
 };
-// 修改提示與答案按鈕
+// 提示與答案按鈕
 document.getElementById('btn-hint').onclick = handleHintClick;
 document.getElementById('btn-answer').onclick = () => {
     // 點擊「看答案」按鈕直接強制跳到顯示答案
     document.getElementById('answer-display').classList.remove('hidden');
     currentStep = 2;
+    updateStatusBadge('answer');
 };
 // 啟動！
 loadData();
